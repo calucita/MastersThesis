@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/simd-hpc/!svn/ver/112/cpu
+END
+scatterbound_calu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/simd-hpc/!svn/ver/182/cpu/scatterbound_calu.cpp
+END
+gatherbound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/simd-hpc/!svn/ver/97/cpu/gatherbound.cpp
+END
+shortintrin
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/simd-hpc/!svn/ver/35/cpu/shortintrin
+END
+mandelbrot_gcc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/simd-hpc/!svn/ver/62/cpu/mandelbrot_gcc.cpp
+END
+intrin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/simd-hpc/!svn/ver/62/cpu/intrin.cpp
+END
+gatherbound_calu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/simd-hpc/!svn/ver/182/cpu/gatherbound_calu.cpp
+END
+simdman.s
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/simd-hpc/!svn/ver/62/cpu/simdman.s
+END
+nbody.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/simd-hpc/!svn/ver/93/cpu/nbody.cpp
+END
+memorybound.s
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/simd-hpc/!svn/ver/45/cpu/memorybound.s
+END
+reconstruction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/simd-hpc/!svn/ver/47/cpu/reconstruction.cpp
+END
+modules
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/simd-hpc/!svn/ver/62/cpu/modules
+END
+ResultsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/simd-hpc/!svn/ver/62/cpu/ResultsCPU
+END
+simdman.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/simd-hpc/!svn/ver/62/cpu/simdman.cpp
+END
+shortsimd
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/simd-hpc/!svn/ver/36/cpu/shortsimd
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/simd-hpc/!svn/ver/93/cpu/Makefile
+END
+scatterbound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/simd-hpc/!svn/ver/73/cpu/scatterbound.cpp
+END
+fractal0.png
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/simd-hpc/!svn/ver/182/cpu/fractal0.png
+END
+fractal1.png
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/simd-hpc/!svn/ver/182/cpu/fractal1.png
+END
+fractal2.png
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/simd-hpc/!svn/ver/182/cpu/fractal2.png
+END
+memorybound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/simd-hpc/!svn/ver/18/cpu/memorybound.cpp
+END
+computebound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/simd-hpc/!svn/ver/76/cpu/computebound.cpp
+END
+memorybound_calu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/simd-hpc/!svn/ver/112/cpu/memorybound_calu.cpp
+END
+calumandel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/simd-hpc/!svn/ver/62/cpu/calumandel.cpp
+END
+columnChoosing
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/simd-hpc/!svn/ver/62/cpu/columnChoosing
+END
+timeResultsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/simd-hpc/!svn/ver/33/cpu/timeResultsCPU
+END
+computebound_calu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/simd-hpc/!svn/ver/182/cpu/computebound_calu.cpp
+END
+Makefile_gcc
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/simd-hpc/!svn/ver/62/cpu/Makefile_gcc
+END
+speedupsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/simd-hpc/!svn/ver/62/cpu/speedupsCPU
+END
+intrin.s
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/simd-hpc/!svn/ver/62/cpu/intrin.s
+END
+cpuused
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/simd-hpc/!svn/ver/33/cpu/cpuused
+END
+timeRes
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/simd-hpc/!svn/ver/33/cpu/timeRes
+END
+mandelbrot.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/simd-hpc/!svn/ver/73/cpu/mandelbrot.cpp
+END
+histoscript
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/simd-hpc/!svn/ver/73/cpu/histoscript
+END
+gpuused
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/simd-hpc/!svn/ver/33/cpu/gpuused
+END

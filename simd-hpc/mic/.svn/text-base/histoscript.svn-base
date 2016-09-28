@@ -1,0 +1,70 @@
+#!/bin/bash
+
+bounds=( computebound_calu scatterbound_calu memorybound_calu gatherbound_calu )
+
+for t in gatherbound_calu computebound_calu scatterbound_calu memorybound_calu 
+do
+dummy=1
+echo "$t"
+#`read dummy
+
+file=${t}_dir/resTh
+rm -f $file/*
+
+echo $file
+for i in 60 120 240
+do 
+	OMP_NUM_THREADS=${i} ${t} > $file/cpumanout-$i 
+	OMP_NUM_THREADS=${i} ${t} >>$file/cpumanout-$i
+	echo $i >> $file/timeRes
+	echo $i >> $file/timeRes
+	echo "$i Thread RUN"
+done
+
+for i in 60 120 240
+do 
+	cat $file/cpumanout-$i | grep "Scalar runtime" | awk '{print $4}' >> $file/scalar
+	cat $file/cpumanout-$i | grep "SIMD runtime" | awk '{print $4}' >>           $file/Skernel
+	cat $file/cpumanout-$i | grep "Easy runtime" | awk '{print $4}' >>           $file/Ekernel
+	cat $file/cpumanout-$i | grep "Intrinsic kernel" | awk '{print $4}' >>      $file/intrin
+	cat $file/cpumanout-$i | grep "Complex/complex" | awk '{print $3}' >>       $file/CCspeed
+	cat $file/cpumanout-$i | grep "Speed-up SIMD" | awk '{print $3}' >>         $file/Sspeed
+	cat $file/cpumanout-$i | grep "Speed-up Easy" | awk '{print $3}' >>    $file/Espeed
+done
+
+cd $file
+paste timeRes scalar Ekernel Skernel > timeResultsCPU
+paste timeRes Sspeed Espeed > speedupsCPU
+
+cd ../../
+
+file=${t}_dir/resMe
+rm -f $file/*
+###########  MEMORYFOOTPRINT
+
+for i in 61440 122880 245760 491520 983040 1966080
+do 
+	OMP_NUM_THREADS=120 $t $i > $file/cpumanout-$i 
+	OMP_NUM_THREADS=120 $t $i >>$file/cpumanout-$i
+	echo $i
+done
+
+for i in 61440 122880 245760 491520 983040 1966080
+do 
+	cat $file/cpumanout-$i | grep "Scalar runtime" | awk '{print $4}' >> $file/scalar
+	cat $file/cpumanout-$i | grep "SIMD runtime" | awk '{print $4}' >>           $file/Skernel
+	cat $file/cpumanout-$i | grep "Easy runtime" | awk '{print $4}' >>           $file/Ekernel
+	cat $file/cpumanout-$i | grep "Intrinsic kernel" | awk '{print $4}' >>      $file/intrin
+	cat $file/cpumanout-$i | grep "Complex/complex" | awk '{print $3}' >>       $file/CCspeed
+	cat $file/cpumanout-$i | grep "Speed-up SIMD" | awk '{print $3}' >>         $file/Sspeed
+	cat $file/cpumanout-$i | grep "Speed-up Easy" | awk '{print $3}' >>    $file/Espeed
+
+        echo $(( $i / 1024 )) >> $file/memRes
+	echo $(( $i / 1024 )) >> $file/memRes
+done
+cd $file
+paste memRes scalar Ekernel Skernel > timeResultsCPU
+paste memRes Sspeed Espeed > speedupsCPU
+
+cd ../..
+done

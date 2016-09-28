@@ -1,0 +1,53 @@
+#!/bin/bash
+
+#file=v5/resTh
+#rm -f $file/*
+#
+#echo $file
+#for i in 1 4 8 12 16 20 24 28 32 40 
+#do 
+#	OMP_NUM_THREADS=${i} mandelbrot > $file/cpumanout-$i 
+#	OMP_NUM_THREADS=${i} mandelbrot >>$file/cpumanout-$i
+#	echo $i >> $file/timeRes
+#	echo $i >> $file/timeRes
+#	echo "$i Thread RUN"
+#done
+#
+#for i in 1 4 8 12 16 20 24 28 32 40
+#do 
+#	cat $file/cpumanout-$i | grep "Scalar kernel runtime" | awk '{print $4}' >> $file/scalar
+#	cat $file/cpumanout-$i | grep "Scalar complex kernel" | awk '{print $4}' >> $file/complex
+#	cat $file/cpumanout-$i | grep "SIMD complex kernel" | awk '{print $4}' >>   $file/Scomplex
+#	cat $file/cpumanout-$i | grep "SIMD kernel" | awk '{print $4}' >>           $file/Skernel
+#	cat $file/cpumanout-$i | grep "Intrinsic kernel" | awk '{print $4}' >>      $file/intrin
+#	cat $file/cpumanout-$i | grep "Complex/complex" | awk '{print $3}' >>       $file/CCspeed
+#	cat $file/cpumanout-$i | grep "Speed-up SIMD" | awk '{print $3}' >>         $file/Sspeed
+#	cat $file/cpumanout-$i | grep "Speed-up intrinsic" | awk '{print $3}' >>    $file/Ispeed
+#done
+
+#cd $file
+#paste timeRes scalar complex Skernel Scomplex intrin > timeResultsCPU
+#paste timeRes CCspeed Sspeed Ispeed > speedupsCPU
+
+file=v5/resMe
+rm -f $file/*
+###########  MEMORYFOOTPRINT
+
+for i in 1024 1536 2048 2560 3072 4096 
+do 
+	OMP_NUM_THREADS=40 mandelbrot $i $i > $file/cpumanout-$i 
+	OMP_NUM_THREADS=40 mandelbrot $i $i >>$file/cpumanout-$i
+	echo $i
+done
+
+for i in 1024 1536 2048 2560 3072 4096 
+do 
+	cat $file/cpumanout-$i | grep "Cuda Scalar (blocks):" | awk '{print $4}' >> $file/scalar
+	cat $file/cpumanout-$i | grep "Cuda Simd - 1 elem/th:" | awk '{print $6}' >> $file/simd
+	cat $file/cpumanout-$i | grep "Speed-up Cuda Sc/Simd:" | awk '{print $4}' >> $file/speed
+	echo $(( $i * $i * 4 / 1024 )) >> $file/memRes
+	echo $(( $i * $i * 4 / 1024 )) >> $file/memRes
+done
+cd $file
+paste memRes scalar simd > ResultsGPU
+paste memRes speed > speedupsGPU

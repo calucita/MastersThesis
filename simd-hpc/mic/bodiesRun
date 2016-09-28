@@ -1,0 +1,62 @@
+#!/bin/bash
+module load intel/2016.1.0.423501
+
+#file="bodies/resTh"
+#rm -f $file/*
+#
+#echo $file
+#for i in 30 60 120 240 
+#do 
+#	echo "$i Thread RUN"
+#	echo $i >> $file/timeRes
+#	OMP_NUM_THREADS=${i} nbody > $file/cpumanout-$i 
+#	OMP_NUM_THREADS=${i} nbody >>$file/cpumanout-$i
+#	echo $i >> $file/timeRes
+#	echo "$i Thread RUN"
+#done
+#
+#for i in 30 60 120 240
+#do 
+#	cat $file/cpumanout-$i | grep "Scalar runtime" | awk '{print $4}' >> $file/scalar
+#	cat $file/cpumanout-$i | grep "Simd runtime" | awk '{print $4}' >>           $file/Skernel
+#	cat $file/cpumanout-$i | grep "Easy runtime" | awk '{print $4}' >>       $file/Easy
+#	cat $file/cpumanout-$i | grep "Speed-up SIMD" | awk '{print $3}' >>         $file/Sspeed
+#	cat $file/cpumanout-$i | grep "Speed-up easy" | awk '{print $3}' >>         $file/Espeed
+#done
+
+#cd $file
+#paste timeRes scalar Skernel Easy > ResultsCPU
+#paste timeRes Espeed Sspeed > speedupsCPU
+
+#cd ../..
+
+file="bodies/resMe"
+#rm -f $file/*
+###########  MEMORYFOOTPRINT  737280
+
+m=737280
+
+for i in 2 4 8 10 12 16  
+do
+t=$(( $i*$m ))
+#	OMP_NUM_THREADS=240 nbody $t > $file/cpumanout-$t 
+#	OMP_NUM_THREADS=240 nbody $t >>$file/cpumanout-$t
+	echo "just finished size $(( $i*30720 ))  for case ${cases[$c]} and version ${version[$v]}"
+done
+
+m=737280
+for i in 2 4 8 10 12 16  
+do 
+t=$(( $i*$m ))
+	cat $file/cpumanout-$t | grep "Scalar runtime" | awk '{print $4}' >> $file/scalar
+	cat $file/cpumanout-$t | grep "Simd runtime" | awk '{print $4}' >>           $file/Skernel
+	cat $file/cpumanout-$t | grep "Easy runtime" | awk '{print $4}' >>       $file/Easy
+	cat $file/cpumanout-$t | grep "Speed-up SIMD" | awk '{print $3}' >>         $file/Sspeed
+	cat $file/cpumanout-$t | grep "Speed-up easy" | awk '{print $3}' >>         $file/Espeed
+	cat $file/cpumanout-$t | grep "Mem size" | awk '{print $4}' >>  $file/memRes
+done
+
+cd $file
+paste memRes scalar Skernel Easy > ResultsCPU
+paste memRes Espeed Sspeed > speedupsCPU
+

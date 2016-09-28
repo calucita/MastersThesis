@@ -1,0 +1,56 @@
+========================================
+Usage: computebound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15728640
+M = 200000
+Threads = 20 (3072KB per thread)
+Mem size = 61440 KB
+----------------------------------------
+Init runtime [ms]:                13.22
+----------------------------------------
+Scalar runtime [ms]:            35346.10
+Easy runtime [ms]:             34702.15
+SIMD runtime [ms]:              4255.98
+Intrinsic runtime [ms]:         4260.60
+----------------------------------------
+Scalar performance [Gflops]:     165.77
+Easy performance [Gflops]:       168.85
+SIMD performance [Gflops]:      1376.74
+Intrinsic performance [Gflops]: 1375.24
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+SIMD bandwidth [GB/s]:             0.01
+Intrinsic bandwidth [GB/s]:        0.01
+----------------------------------------
+Speed-up SIMD:                     8.31
+Speed-up Easy:                     1.02
+Speed-up intrinsic:                8.30
+========================================
+========================================
+Usage: computebound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15728640
+M = 200000
+Threads = 20 (3072KB per thread)
+Mem size = 61440 KB
+----------------------------------------
+Init runtime [ms]:                11.76
+----------------------------------------
+Scalar runtime [ms]:            37703.73
+Easy runtime [ms]:             34925.15
+SIMD runtime [ms]:              4254.26
+Intrinsic runtime [ms]:         4260.84
+----------------------------------------
+Scalar performance [Gflops]:     155.41
+Easy performance [Gflops]:       167.77
+SIMD performance [Gflops]:      1377.30
+Intrinsic performance [Gflops]: 1375.17
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+SIMD bandwidth [GB/s]:             0.01
+Intrinsic bandwidth [GB/s]:        0.01
+----------------------------------------
+Speed-up SIMD:                     8.86
+Speed-up Easy:                     1.08
+Speed-up intrinsic:                8.85
+========================================

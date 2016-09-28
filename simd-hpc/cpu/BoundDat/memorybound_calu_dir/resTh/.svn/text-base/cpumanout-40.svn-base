@@ -1,0 +1,52 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 40 (1.5KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.01
+----------------------------------------
+Scalar runtime [ms]:              28.74
+Easy runtime [ms]:                 5.55
+SIMD runtime [ms]:                 5.95
+Intrinsic runtime [ms]:            4.85
+----------------------------------------
+Scalar performance [Gflops]:     199.12
+SIMD performance [Gflops]:      1030.26
+Intrinsic performance [Gflops]: 1179.54
+----------------------------------------
+Scalar bandwidth [GB/s]:         398.25
+SIMD bandwidth [GB/s]:          2060.53
+Intrinsic bandwidth [GB/s]:     2359.07
+----------------------------------------
+Speed-up SIMD:                     5.17
+Speed-up intrinsic:                5.92
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 40 (1.5KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Scalar runtime [ms]:              27.61
+Easy runtime [ms]:                 5.69
+SIMD runtime [ms]:                 6.08
+Intrinsic runtime [ms]:            5.40
+----------------------------------------
+Scalar performance [Gflops]:     207.22
+SIMD performance [Gflops]:      1006.16
+Intrinsic performance [Gflops]: 1059.65
+----------------------------------------
+Scalar bandwidth [GB/s]:         414.43
+SIMD bandwidth [GB/s]:          2012.33
+Intrinsic bandwidth [GB/s]:     2119.30
+----------------------------------------
+Speed-up SIMD:                     4.86
+Speed-up intrinsic:                5.11
+========================================

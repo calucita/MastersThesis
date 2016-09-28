@@ -1,0 +1,54 @@
+----------------------------------------
+========================================
+Usage: scatterbound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 491520
+M = 200000
+Threads = 120 (16KB per thread)
+Mem size = 1920 KB
+----------------------------------------
+Init runtime [ms]:                 1.23
+----------------------------------------
+Overhead runtime [ms]:            34.84
+Scalar runtime [ms]:            120041.44
+Easy runtime [ms]:              128915.91
+SIMD runtime [ms]:              125106.74
+----------------------------------------
+Scalar performance [Gflops]:       0.76
+Easy performance [Gflops]:         0.71
+SIMD performance [Gflops]:         0.73
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+Easy bandwidth [GB/s]:             0.00
+SIMD bandwidth [GB/s]:             0.00
+----------------------------------------
+Speed-up Easy:                     0.93
+Speed-up SIMD:                     0.96
+========================================
+----------------------------------------
+========================================
+Usage: scatterbound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 491520
+M = 200000
+Threads = 120 (16KB per thread)
+Mem size = 1920 KB
+----------------------------------------
+Init runtime [ms]:                 1.31
+----------------------------------------
+Overhead runtime [ms]:            34.72
+Scalar runtime [ms]:            110902.38
+Easy runtime [ms]:              120593.97
+SIMD runtime [ms]:              123408.93
+----------------------------------------
+Scalar performance [Gflops]:       0.83
+Easy performance [Gflops]:         0.76
+SIMD performance [Gflops]:         0.74
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+Easy bandwidth [GB/s]:             0.00
+SIMD bandwidth [GB/s]:             0.00
+----------------------------------------
+Speed-up Easy:                     0.92
+Speed-up SIMD:                     0.90
+========================================

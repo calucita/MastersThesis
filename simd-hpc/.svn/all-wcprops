@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/simd-hpc/!svn/ver/113
+END
+writepng.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/simd-hpc/!svn/ver/50/writepng.cpp
+END
+timeit.h
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/simd-hpc/!svn/ver/93/timeit.h
+END
+tiff.o
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/simd-hpc/!svn/ver/97/tiff.o
+END
+writepng.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/simd-hpc/!svn/ver/46/writepng.h
+END
+timeResultsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/simd-hpc/!svn/ver/62/timeResultsCPU
+END
+newfile
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/simd-hpc/!svn/ver/81/newfile
+END
+helper_avx_cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/simd-hpc/!svn/ver/19/helper_avx_cpu.h
+END
+writepng.o
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/simd-hpc/!svn/ver/97/writepng.o
+END
+fractal.tif
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/simd-hpc/!svn/ver/62/fractal.tif
+END
+footprint.sh
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/simd-hpc/!svn/ver/18/footprint.sh
+END
+threadprint.sh
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/simd-hpc/!svn/ver/31/threadprint.sh
+END
+speedupsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/simd-hpc/!svn/ver/62/speedupsCPU
+END
+recon_parameters.inc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/simd-hpc/!svn/ver/47/recon_parameters.inc
+END
+cmdline.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/simd-hpc/!svn/ver/93/cmdline.h
+END
+colormappng.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/simd-hpc/!svn/ver/55/colormappng.h
+END
+ResultsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/simd-hpc/!svn/ver/62/ResultsCPU
+END
+tiff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/simd-hpc/!svn/ver/5/tiff.cpp
+END
+tiff.h
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/simd-hpc/!svn/ver/5/tiff.h
+END

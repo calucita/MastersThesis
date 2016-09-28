@@ -1,0 +1,52 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 1 (60KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.14
+----------------------------------------
+Scalar runtime [ms]:             502.77
+Easy runtime [ms]:               148.99
+SIMD runtime [ms]:               155.10
+Intrinsic runtime [ms]:          148.76
+----------------------------------------
+Scalar performance [Gflops]:      11.38
+SIMD performance [Gflops]:        38.41
+Intrinsic performance [Gflops]:   38.46
+----------------------------------------
+Scalar bandwidth [GB/s]:          22.76
+SIMD bandwidth [GB/s]:            76.81
+Intrinsic bandwidth [GB/s]:       76.93
+----------------------------------------
+Speed-up SIMD:                     3.37
+Speed-up intrinsic:                3.38
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 1 (60KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.13
+----------------------------------------
+Scalar runtime [ms]:             503.04
+Easy runtime [ms]:               150.92
+SIMD runtime [ms]:               154.53
+Intrinsic runtime [ms]:          150.52
+----------------------------------------
+Scalar performance [Gflops]:      11.37
+SIMD performance [Gflops]:        37.91
+Intrinsic performance [Gflops]:   38.01
+----------------------------------------
+Scalar bandwidth [GB/s]:          22.75
+SIMD bandwidth [GB/s]:            75.83
+Intrinsic bandwidth [GB/s]:       76.03
+----------------------------------------
+Speed-up SIMD:                     3.33
+Speed-up intrinsic:                3.34
+========================================

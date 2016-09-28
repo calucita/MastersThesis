@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe
+END
+cpumanout-1024
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/cpumanout-1024
+END
+speed
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/speed
+END
+cpumanout-3072
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/cpumanout-3072
+END
+speedupsGPU
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/speedupsGPU
+END
+cpumanout-2560
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/cpumanout-2560
+END
+scalar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/scalar
+END
+cpumanout-2048
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/cpumanout-2048
+END
+cpumanout-1536
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/cpumanout-1536
+END
+memRes
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/memRes
+END
+cpumanout-4096
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/cpumanout-4096
+END
+simd
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/simd
+END
+ResultsGPU
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/simd-hpc/!svn/ver/63/gpu/case1/v3/resMe/ResultsGPU
+END

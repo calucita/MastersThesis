@@ -1,0 +1,25 @@
+========================================
+Usage: nbody <Bytes:default=737280> <M:default=25> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 921600 (particles = 153600) 
+M = 25
+Threads = 1 (3600KB per thread)
+Mem size = 3600 KB
+----------------------------------------
+--malloc--------------------------------------
+----------------------------------------
+
+ Average rate for iterations 11 through 25: 1.711 +- 0.006 steps per second.
+
+ Average rate for iterations 11 through 25: 1.703 +- 0.006 steps per second.
+GPU runtime [ms]:               14591.25
+
+ Average rate for iterations 11 through 25: 0.013 +- 0.000 steps per second.
+
+ Average rate for iterations 11 through 25: 0.013 +- 0.000 steps per second.
+GPU runtime [ms]:               1903839.02
+----------------------------------------
+----------------------------------------
+Speed-up Cuda32/Cuda:            130.48
+----------------------------------------
+========================================

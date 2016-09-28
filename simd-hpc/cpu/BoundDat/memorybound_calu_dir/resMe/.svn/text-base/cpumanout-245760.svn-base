@@ -1,0 +1,52 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 61440
+M = 200000
+Threads = 40 (6KB per thread)
+Mem size = 240 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Scalar runtime [ms]:             111.97
+Easy runtime [ms]:                15.77
+SIMD runtime [ms]:                27.86
+Intrinsic runtime [ms]:           17.31
+----------------------------------------
+Scalar performance [Gflops]:     204.41
+SIMD performance [Gflops]:      1451.55
+Intrinsic performance [Gflops]: 1322.17
+----------------------------------------
+Scalar bandwidth [GB/s]:         408.83
+SIMD bandwidth [GB/s]:          2903.11
+Intrinsic bandwidth [GB/s]:     2644.34
+----------------------------------------
+Speed-up SIMD:                     7.10
+Speed-up intrinsic:                6.47
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 61440
+M = 200000
+Threads = 40 (6KB per thread)
+Mem size = 240 KB
+----------------------------------------
+Init runtime [ms]:                 0.03
+----------------------------------------
+Scalar runtime [ms]:             114.65
+Easy runtime [ms]:                18.98
+SIMD runtime [ms]:                27.95
+Intrinsic runtime [ms]:           18.81
+----------------------------------------
+Scalar performance [Gflops]:     199.63
+SIMD performance [Gflops]:      1206.09
+Intrinsic performance [Gflops]: 1216.67
+----------------------------------------
+Scalar bandwidth [GB/s]:         399.26
+SIMD bandwidth [GB/s]:          2412.18
+Intrinsic bandwidth [GB/s]:     2433.34
+----------------------------------------
+Speed-up SIMD:                     6.04
+Speed-up intrinsic:                6.09
+========================================

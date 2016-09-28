@@ -1,0 +1,34 @@
+========================================
+Usage: nbody <Bytes:default=737280> <M:default=35> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 184320 (particles = 30720) 
+M = 35
+Threads = 120 (6KB per thread)
+Mem size = 720 KB
+----------------------------------------
+737280 
+Scalar runtime [ms]:            12410.88
+Easy runtime [ms]:              2628.41
+Simd runtime [ms]:               943.75
+----------------------------------------
+Speed-up SIMD:                    13.15
+Speed-up easy:                     4.72
+----------------------------------------
+========================================
+========================================
+Usage: nbody <Bytes:default=737280> <M:default=35> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 184320 (particles = 30720) 
+M = 35
+Threads = 120 (6KB per thread)
+Mem size = 720 KB
+----------------------------------------
+737280 
+Scalar runtime [ms]:            12479.49
+Easy runtime [ms]:              2636.28
+Simd runtime [ms]:               994.80
+----------------------------------------
+Speed-up SIMD:                    12.54
+Speed-up easy:                     4.73
+----------------------------------------
+========================================

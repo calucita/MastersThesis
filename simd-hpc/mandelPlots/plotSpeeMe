@@ -1,0 +1,31 @@
+arch="mic"
+case="case1"
+man="Detailed"
+file="../".arch."/BrotDat/".case."/MeSpeedRes"
+set title man." Mandelbrot image"
+set logscale x 2
+#set logscale y 10
+set xlabel "Memory footprint(KB)"
+set ylabel "Speed-up"
+set autoscale
+set yrange [0:]
+set term png    
+set terminal pngcairo enhanced font 'Verdana,14' linewidth 2 
+set output arch."SpeeMe".case.".png"
+set key left bottom
+
+plot file using 1:2 notitle w points linetype 1, file using 1:($2/2) title 'Vers1' smooth frequency linetype 1,\
+     file using 1:5 notitle w points linetype 2, file using 1:($5/2) title 'Vers2' smooth frequency linetype 2,\
+     file using 1:8 notitle w points linetype 3, file using 1:($8/2) title 'Vers3' smooth frequency linetype 3,\
+     file using 1:11 notitle w points linetype 4, file using 1:($11/2) title 'Vers4' smooth frequency linetype 4,\
+     file using 1:14 notitle w points linetype 5, file using 1:($14/2) title 'Vers5' smooth frequency linetype 5,\
+     file using 1:15 notitle w points linetype 6, file using 1:($15/2) title 'Intrinsic' smooth frequency linetype 6
+
+     #file using 1:11 notitle w points linetype 4, file using 1:($11/2) title 'Vers4' smooth frequency linetype 4,\
+     #file using 1:15 title 'Intrinsic' w linespoints linetype 6
+     #file using 1:14 title 'Vers5' w linespoints linetype 5,\
+     #file using 1:11 title 'Vers4' w linespoints,\
+     #file using 1:8 title 'Vers3' w linespoints,\
+     #file using 1:5 title 'Vers2' w linespoints,\
+     #file using 1:2 title 'Vers1' w linespoints,\
+

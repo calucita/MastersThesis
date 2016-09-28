@@ -1,0 +1,4 @@
+ paste v*/resMe/ResultsCPU | awk -v OFS='\t' '{print $1, $2, $3, $6, $7, $10, $11, $14, $15, $18, $19, $20}' > MeTimeRes
+ paste v*/resTh/speedupsCPU | awk -v OFS='\t' '{print $1, $2, $3, $5, $6, $8, $9, $11, $12, $14, $15}' > ThSpeedRes
+ paste v*/resMe/speedupsCPU | awk -v OFS='\t' '{print $1, $2, $3, $5, $6, $8, $9, $11, $12, $14, $15}' > MeSpeedRes
+ paste v*/resTh/timeResultsCPU | awk -v OFS='\t' '{print $1, $2, $3, $6, $7, $10, $11, $14, $15, $18, $19, $20}' > ThTimeRes

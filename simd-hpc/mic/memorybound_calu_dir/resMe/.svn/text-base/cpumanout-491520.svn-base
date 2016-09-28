@@ -1,0 +1,58 @@
+========================================
+Usage: memorybound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 122880
+M = 200000
+Threads = 120 (4KB per thread)
+Mem size = 480 KB
+----------------------------------------
+Init runtime [ms]:                 0.03
+----------------------------------------
+Overhead runtime [ms]:            35.09
+Scalar runtime [ms]:             820.27
+simd sum=61439.500000
+Easy runtime [ms]:               159.28
+simd sum=61439.500000
+SIMD runtime [ms]:                48.43
+simd sum=61439.500000
+----------------------------------------
+Scalar performance [Gflops]:      27.90
+Easy performance [Gflops]:       143.70
+SIMD performance [Gflops]:       472.60
+----------------------------------------
+Scalar bandwidth [GB/s]:         111.61
+Easy bandwidth [GB/s]:           574.81
+SIMD bandwidth [GB/s]:          1890.42
+----------------------------------------
+Speed-up Easy:                     5.15
+Speed-up SIMD:                    16.94
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 122880
+M = 200000
+Threads = 120 (4KB per thread)
+Mem size = 480 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Overhead runtime [ms]:            35.23
+Scalar runtime [ms]:             819.96
+simd sum=61439.500000
+Easy runtime [ms]:               146.10
+simd sum=61439.500000
+SIMD runtime [ms]:                47.16
+simd sum=61439.500000
+----------------------------------------
+Scalar performance [Gflops]:      27.91
+Easy performance [Gflops]:       156.66
+SIMD performance [Gflops]:       485.32
+----------------------------------------
+Scalar bandwidth [GB/s]:         111.65
+Easy bandwidth [GB/s]:           626.65
+SIMD bandwidth [GB/s]:          1941.28
+----------------------------------------
+Speed-up Easy:                     5.61
+Speed-up SIMD:                    17.39
+========================================

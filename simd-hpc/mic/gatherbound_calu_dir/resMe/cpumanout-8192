@@ -1,0 +1,54 @@
+----------------------------------------
+========================================
+Usage: gatherbound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 31457280
+M = 200000
+Threads = 240 (512KB per thread)
+Mem size = 122880 KB
+----------------------------------------
+Init runtime [ms]:                58.93
+----------------------------------------
+Overhead runtime [ms]:           107.90
+Scalar runtime [ms]:            566037.16
+Easy runtime [ms]:              56030.74
+SIMD runtime [ms]:              62388.77
+----------------------------------------
+Scalar performance [Gflops]:      10.35
+Easy performance [Gflops]:       104.57
+SIMD performance [Gflops]:        93.92
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+Easy bandwidth [GB/s]:             0.00
+SIMD bandwidth [GB/s]:             0.00
+----------------------------------------
+Speed-up Easy:                    10.10
+Speed-up SIMD:                     9.07
+========================================
+----------------------------------------
+========================================
+Usage: gatherbound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 31457280
+M = 200000
+Threads = 240 (512KB per thread)
+Mem size = 122880 KB
+----------------------------------------
+Init runtime [ms]:                58.11
+----------------------------------------
+Overhead runtime [ms]:            96.03
+Scalar runtime [ms]:            566074.31
+Easy runtime [ms]:              55410.21
+SIMD runtime [ms]:              60859.08
+----------------------------------------
+Scalar performance [Gflops]:      10.35
+Easy performance [Gflops]:       105.75
+SIMD performance [Gflops]:        96.28
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+Easy bandwidth [GB/s]:             0.00
+SIMD bandwidth [GB/s]:             0.00
+----------------------------------------
+Speed-up Easy:                    10.22
+Speed-up SIMD:                     9.30
+========================================

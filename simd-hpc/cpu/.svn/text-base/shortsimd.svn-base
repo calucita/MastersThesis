@@ -1,0 +1,69 @@
+                                # LOE rbx r12 r13 r14 r15 eax edx xmm11 xmm12 xmm15 ymm0 ymm1 ymm2 ymm3 ymm4 ymm5 ymm6 ymm7 ymm8 ymm13 ymm14
+..B2.3:                         # Preds ..B2.4 ..B2.2
+..L87:          # optimization report
+                # LOOP WAS VECTORIZED
+                # loop was vectorized along with the enclosing function
+..LN378:
+        incl      %eax                                          #24.25
+..LN379:
+        cmpl      %edx, %eax                                    #24.41
+..LN380:
+        jge       ..B2.11       # Prob 50%                      #24.41
+..LN381:
+                                # LOE rbx r12 r13 r14 r15 eax edx xmm11 xmm12 xmm15 ymm0 ymm1 ymm2 ymm3 ymm4 ymm5 ymm6 ymm7 ymm8 ymm13 ymm14
+..B2.4:                         # Preds ..B2.3
+..LN382:
+	.loc    1  19  is_stmt 1
+        vaddps    %ymm2, %ymm2, %ymm10                          #19.14
+..LN383:
+        vfmadd213ps %ymm3, %ymm13, %ymm10                       #19.22
+..LN384:
+	.loc    1  24  is_stmt 1
+        vandps    %ymm0, %ymm6, %ymm9                           #24.41
+..LN385:
+	.loc    1  19  is_stmt 1
+        vblendvps %ymm9, %ymm10, %ymm2, %ymm2                   #19.3
+..LN386:
+	.loc    1  20  is_stmt 1
+        vaddps    %ymm8, %ymm4, %ymm10                          #20.17
+..LN387:
+        vsubps    %ymm1, %ymm10, %ymm10                         #20.12
+..LN388:
+        vblendvps %ymm9, %ymm10, %ymm13, %ymm13                 #20.3
+..LN389:
+	.loc    1  21  is_stmt 1
+        vmulps    %ymm13, %ymm13, %ymm10                        #21.10
+..LN390:
+        vblendvps %ymm9, %ymm10, %ymm8, %ymm8                   #21.3
+..LN391:
+	.loc    1  22  is_stmt 1
+        vmulps    %ymm2, %ymm2, %ymm10                          #22.10
+..LN392:
+        vblendvps %ymm9, %ymm10, %ymm1, %ymm1                   #22.3
+..LN393:
+	.loc    1  19  is_stmt 1
+        vmovd     %eax, %xmm10                                  #19.3
+..LN394:
+        vpbroadcastd %xmm10, %ymm10                             #19.3
+..LN395:
+	.loc    1  23  is_stmt 1
+        vpaddd    .L_2il0floatpacket.6(%rip), %ymm10, %ymm10    #23.3
+..LN396:
+        vpblendvb %ymm9, %ymm10, %ymm5, %ymm5                   #23.3
+..LN397:
+	.loc    1  24  is_stmt 1
+        vaddps    %ymm1, %ymm8, %ymm10                          #24.20
+..LN398:
+        vcmpltps  %ymm7, %ymm10, %ymm10                         #24.25
+..LN399:
+        vandps    %ymm10, %ymm9, %ymm9                          #24.25
+..LN400:
+        vxorps    .L_2il0floatpacket.7(%rip), %ymm9, %ymm9      #24.25
+..LN401:
+        vandnps   %ymm0, %ymm9, %ymm0                           #24.25
+..LN402:
+        vptest    %ymm14, %ymm0                                 #24.25
+..LN403:
+        jne       ..B2.3        # Prob 50%                      #24.25
+..LN404:
+ 

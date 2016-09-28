@@ -1,0 +1,22 @@
+=======================================
+========================================
+Usage: ./mandelbrot <N:default=1024> <M:default=1024> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1024
+M = 1024
+threads = 20 (204.8KB per thread)
+Mem size = 4096 KB
+----------------------------------------
+---------------------------------------
+Init runtime:                0.001687 s
+Wake-up runtime (cpu+gpu):   0.042513 s
+---------------------------------------
+Cuda Scalar (blocks):        0.060347 s
+norm=14.891428
+Saving fractal0.png.
+Cuda Simd - 1 elem/th:       0.006887 s
+norm=14.891428
+Saving fractal1.png.
+---------------------------------------
+Speed-up Cuda Sc/Simd:           8.76 
+=======================================

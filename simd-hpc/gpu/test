@@ -1,0 +1,27 @@
+=======================================
+========================================
+Usage: ./computebound <Bytes:default=15360> <M:default=10000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 3840
+M = 10000
+Threads = 1 (15KB per thread)
+Mem size = 15 KB
+----------------------------------------
+---------------------------------------
+Init runtime [ms]:                 0.01
+----------------------------------------
+Scalar runtime [ms]:              12.31
+Cuda [ms]:                         1.22
+Cuda (32 elements) [ms]:          26.37
+----------------------------------------
+Scalar performance [Gflops]:       5.81
+Cuda [Gflops]:                    58.45
+Cuda (32E) [Gflops]:               2.71
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+Cuda bandwidth [GB/s]:             0.01
+Cuda32 bandwidth [GB/s]:           0.00
+----------------------------------------
+Speed-up Cpu/Cuda:                10.06
+Speed-up Cuda32/Cuda:             21.55
+========================================

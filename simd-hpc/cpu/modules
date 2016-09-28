@@ -1,0 +1,5 @@
+module load cuda
+module load intel/2016.1.0.423501
+module load binutils
+module load gcc/5.3.0 
+ 

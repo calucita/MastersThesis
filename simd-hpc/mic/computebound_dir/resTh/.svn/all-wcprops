@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh
+END
+speedupsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/speedupsCPU
+END
+Skernel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/Skernel
+END
+Sspeed
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/Sspeed
+END
+intrin
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/intrin
+END
+Ekernel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/Ekernel
+END
+Espeed
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/Espeed
+END
+scalar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/scalar
+END
+CCspeed
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/CCspeed
+END
+timeRes
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/timeRes
+END
+timeResultsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/timeResultsCPU
+END
+cpumanout-120
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/cpumanout-120
+END
+cpumanout-240
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/cpumanout-240
+END
+cpumanout-60
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu_dir/resTh/cpumanout-60
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo
+END
+fullSpeed
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/fullSpeed
+END
+cudaSim
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cudaSim
+END
+1_32Speed
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/1_32Speed
+END
+cpu
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cpu
+END
+timeResultsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/timeResultsCPU
+END
+cudaSim32
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cudaSim32
+END
+cuda32m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cuda32m
+END
+cpumanout-1024
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cpumanout-1024
+END
+speedupsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/speedupsCPU
+END
+cudaSb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cudaSb
+END
+1_flSpeed
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/1_flSpeed
+END
+cudaS32
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cudaS32
+END
+cuda32s
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cuda32s
+END
+cpumanout-3072
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cpumanout-3072
+END
+cpumanout-2560
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cpumanout-2560
+END
+cpumanout-2048
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cpumanout-2048
+END
+cpumanout-1536
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cpumanout-1536
+END
+timeRes
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/timeRes
+END
+cpumanout-4096
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/62/gpu/oldRes/runMenDo/cpumanout-4096
+END

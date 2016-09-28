@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh
+END
+cpumanout-8
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-8
+END
+Sspeed
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/Sspeed
+END
+timeResultsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/timeResultsCPU
+END
+cpumanout-20
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-20
+END
+Scomplex
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/Scomplex
+END
+cpumanout-12
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-12
+END
+cpumanout-40
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-40
+END
+cpumanout-32
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-32
+END
+cpumanout-24
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-24
+END
+cpumanout-16
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-16
+END
+speedupsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/speedupsCPU
+END
+cpumanout-28
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-28
+END
+Skernel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/Skernel
+END
+intrin
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/intrin
+END
+scalar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/scalar
+END
+CCspeed
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/CCspeed
+END
+complex
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/complex
+END
+timeRes
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/timeRes
+END
+cpumanout-1
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-1
+END
+Ispeed
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/Ispeed
+END
+cpumanout-4
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/simd-hpc/!svn/ver/82/cpu/BrotDat/case1/v1/resTh/cpumanout-4
+END

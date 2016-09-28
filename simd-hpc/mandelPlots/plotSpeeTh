@@ -1,0 +1,22 @@
+arch="cpu"
+case="case3"
+man="Dark"
+file="../".arch."/BrotDat/".case."/ThSpeedRes"
+set title man." Mandelbrot image"
+set logscale x 2
+#set logscale y 10
+set xlabel "Number of threads"
+set ylabel "Speed-up"
+set autoscale
+set term png    
+set terminal pngcairo enhanced font 'Verdana,14' linewidth 2 
+set output arch."SpeeTh".case.".png"
+#set key right center
+
+plot file using 1:2 title 'Vers1' w linespoints,\
+     file using 1:4 title 'Vers2' w linespoints,\
+     file using 1:6 title 'Vers3' w linespoints,\
+     file using 1:8 title 'Vers4' w linespoints,\
+     file using 1:10 title 'Vers5' w linespoints,\
+     file using 1:11 title 'Intrinsic' w linespoints
+

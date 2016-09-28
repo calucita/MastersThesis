@@ -1,0 +1,52 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 30720
+M = 200000
+Threads = 40 (3KB per thread)
+Mem size = 120 KB
+----------------------------------------
+Init runtime [ms]:                 0.03
+----------------------------------------
+Scalar runtime [ms]:              56.88
+Easy runtime [ms]:                 9.22
+SIMD runtime [ms]:                13.57
+Intrinsic runtime [ms]:            9.84
+----------------------------------------
+Scalar performance [Gflops]:     201.20
+SIMD performance [Gflops]:      1241.63
+Intrinsic performance [Gflops]: 1162.65
+----------------------------------------
+Scalar bandwidth [GB/s]:         402.40
+SIMD bandwidth [GB/s]:          2483.25
+Intrinsic bandwidth [GB/s]:     2325.30
+----------------------------------------
+Speed-up SIMD:                     6.17
+Speed-up intrinsic:                5.78
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 30720
+M = 200000
+Threads = 40 (3KB per thread)
+Mem size = 120 KB
+----------------------------------------
+Init runtime [ms]:                 0.03
+----------------------------------------
+Scalar runtime [ms]:              58.29
+Easy runtime [ms]:                 8.69
+SIMD runtime [ms]:                12.39
+Intrinsic runtime [ms]:           10.14
+----------------------------------------
+Scalar performance [Gflops]:     196.33
+SIMD performance [Gflops]:      1316.76
+Intrinsic performance [Gflops]: 1128.62
+----------------------------------------
+Scalar bandwidth [GB/s]:         392.67
+SIMD bandwidth [GB/s]:          2633.53
+Intrinsic bandwidth [GB/s]:     2257.23
+----------------------------------------
+Speed-up SIMD:                     6.71
+Speed-up intrinsic:                5.75
+========================================

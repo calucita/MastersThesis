@@ -1,0 +1,18 @@
+========================================
+Usage: nbod2 <Bytes:default=737280> <M:default=35> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 184320 (particles = 30720) 
+M = 35
+Threads = 28 (25.7143KB per thread)
+Mem size = 720 KB
+----------------------------------------
+error : N/2 is not a multiple of threads times 32
+========================================
+Usage: nbod2 <Bytes:default=737280> <M:default=35> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 184320 (particles = 30720) 
+M = 35
+Threads = 28 (25.7143KB per thread)
+Mem size = 720 KB
+----------------------------------------
+error : N/2 is not a multiple of threads times 32

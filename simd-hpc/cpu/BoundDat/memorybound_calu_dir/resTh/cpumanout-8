@@ -1,0 +1,52 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 8 (7.5KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Scalar runtime [ms]:              66.60
+Easy runtime [ms]:                10.99
+SIMD runtime [ms]:                17.48
+Intrinsic runtime [ms]:           10.70
+----------------------------------------
+Scalar performance [Gflops]:      85.91
+SIMD performance [Gflops]:       520.89
+Intrinsic performance [Gflops]:  534.68
+----------------------------------------
+Scalar bandwidth [GB/s]:         171.82
+SIMD bandwidth [GB/s]:          1041.78
+Intrinsic bandwidth [GB/s]:     1069.35
+----------------------------------------
+Speed-up SIMD:                     6.06
+Speed-up intrinsic:                6.22
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 8 (7.5KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Scalar runtime [ms]:              65.87
+Easy runtime [ms]:                10.98
+SIMD runtime [ms]:                17.48
+Intrinsic runtime [ms]:           10.70
+----------------------------------------
+Scalar performance [Gflops]:      86.87
+SIMD performance [Gflops]:       521.23
+Intrinsic performance [Gflops]:  534.52
+----------------------------------------
+Scalar bandwidth [GB/s]:         173.73
+SIMD bandwidth [GB/s]:          1042.46
+Intrinsic bandwidth [GB/s]:     1069.04
+----------------------------------------
+Speed-up SIMD:                     6.00
+Speed-up intrinsic:                6.15
+========================================

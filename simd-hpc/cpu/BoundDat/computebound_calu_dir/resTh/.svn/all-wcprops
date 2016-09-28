@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh
+END
+cpumanout-8
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/cpumanout-8
+END
+Sspeed
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/Sspeed
+END
+Ekernel
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/Ekernel
+END
+timeResultsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/timeResultsCPU
+END
+cpumanout-20
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/cpumanout-20
+END
+cpumanout-40
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/cpumanout-40
+END
+cpumanout-16
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/cpumanout-16
+END
+speedupsCPU
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/speedupsCPU
+END
+intrin
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/intrin
+END
+Skernel
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/Skernel
+END
+scalar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/scalar
+END
+Espeed
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/Espeed
+END
+CCspeed
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/CCspeed
+END
+timeRes
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/timeRes
+END
+cpumanout-1
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/cpumanout-1
+END
+cpumanout-2
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/cpumanout-2
+END
+cpumanout-4
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/simd-hpc/!svn/ver/79/cpu/BoundDat/computebound_calu_dir/resTh/cpumanout-4
+END

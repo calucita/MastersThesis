@@ -1,0 +1,62 @@
+========================================
+Usage: gatherbound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 61440
+M = 200000
+Threads = 20 (12KB per thread)
+Mem size = 240 KB
+----------------------------------------
+Init runtime [ms]:                12.84
+----------------------------------------
+Scalar runtime [ms]:             208.32
+SIMD runtime [ms]:               290.22
+Easy runtime [ms]:               279.37
+Intrinsic runtime [ms]:          280.59
+Experimental runtime [ms]:        76.21
+----------------------------------------
+Scalar performance [Gflops]:      54.93
+SIMD performance [Gflops]:        39.43
+Intrinsic performance [Gflops]:   40.79
+Experimental perform. [Gflops]:  150.17
+----------------------------------------
+Scalar bandwidth [GB/s]:         219.74
+SIMD bandwidth [GB/s]:           157.73
+Intrinsic bandwidth [GB/s]:      163.14
+Experimental bandwidth [GB/s]:   600.68
+----------------------------------------
+Speed-up SIMD:                     0.72
+Speed-up Easy:                     0.75
+Speed-up intrinsic:                0.74
+Speed-up experimental:             2.73
+========================================
+========================================
+Usage: gatherbound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 61440
+M = 200000
+Threads = 20 (12KB per thread)
+Mem size = 240 KB
+----------------------------------------
+Init runtime [ms]:                14.11
+----------------------------------------
+Scalar runtime [ms]:             149.27
+SIMD runtime [ms]:               256.38
+Easy runtime [ms]:               256.75
+Intrinsic runtime [ms]:          261.82
+Experimental runtime [ms]:        76.07
+----------------------------------------
+Scalar performance [Gflops]:      76.67
+SIMD performance [Gflops]:        44.64
+Intrinsic performance [Gflops]:   43.71
+Experimental perform. [Gflops]:  150.45
+----------------------------------------
+Scalar bandwidth [GB/s]:         306.67
+SIMD bandwidth [GB/s]:           178.55
+Intrinsic bandwidth [GB/s]:      174.84
+Experimental bandwidth [GB/s]:   601.78
+----------------------------------------
+Speed-up SIMD:                     0.58
+Speed-up Easy:                     0.58
+Speed-up intrinsic:                0.57
+Speed-up experimental:             1.96
+========================================

@@ -1,0 +1,53 @@
+                                # LOE rcx rbx rsi rdi r8 r9 r10 r11 r12 r14 eax r13d ymm1 ymm2 ymm3 ymm4 ymm5 ymm6 ymm7 ymm8 ymm9 ymm10 ymm11 ymm12 ymm13 ymm14
+..B1.21:                        # Preds ..B1.22 ..B1.20
+..L64:          # optimization report
+                # %s was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria
+                # VECTOR TRIP COUNT IS KNOWN CONSTANT
+..LN297:
+	.loc    1  54  is_stmt 1
+        vmulps    %ymm4, %ymm4, %ymm15                          #54.32
+..LN298:
+	.loc    1  55  is_stmt 1
+        vfmadd231ps %ymm3, %ymm3, %ymm15                        #55.32
+..LN299:
+	.loc    1  58  is_stmt 1
+        vcmplt_oqps %ymm11, %ymm15, %ymm0                       #58.25
+..LN300:
+	.loc    1  62  is_stmt 1
+        vandps    %ymm12, %ymm0, %ymm15                         #62.25
+..LN301:
+	.loc    1  65  is_stmt 1
+        vaddps    %ymm2, %ymm15, %ymm2                          #65.25
+..LN302:
+	.loc    1  66  is_stmt 1
+        vmulps    %ymm4, %ymm3, %ymm15                          #66.25
+..LN303:
+	.loc    1  68  is_stmt 1
+        vfmadd213ps %ymm1, %ymm3, %ymm3                         #68.25
+..LN304:
+	.loc    1  61  is_stmt 1
+        vmovmskps %ymm0, %edx                                   #61.24
+..LN305:
+	.loc    1  68  is_stmt 1
+        vfnmadd231ps %ymm4, %ymm4, %ymm3                        #68.25
+..LN306:
+	.loc    1  70  is_stmt 1
+        vmovaps   %ymm6, %ymm4                                  #70.25
+..LN307:
+        vfmadd231ps .L_2il0floatpacket.2(%rip), %ymm15, %ymm4   #70.25
+..LN308:
+	.loc    1  73  is_stmt 1
+        testl     %edx, %edx                                    #73.31
+..LN309:
+        je        ..B1.24       # Prob 20%                      #73.31
+..LN310:
+                                # LOE rcx rbx rsi rdi r8 r9 r10 r11 r12 r14 eax r13d ymm1 ymm2 ymm3 ymm4 ymm5 ymm6 ymm7 ymm8 ymm9 ymm10 ymm11 ymm12 ymm13 ymm14
+..B1.22:                        # Preds ..B1.21
+..LN311:
+	.loc    1  51  is_stmt 1
+        incl      %eax                                          #51.22
+..LN312:
+        cmpl      $512, %eax                                    #51.22
+..LN313:
+        jb        ..B1.21       # Prob 99%                      #51.22
+.

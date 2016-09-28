@@ -1,0 +1,42 @@
+========================================
+Usage: scatterbound <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 1 (60KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.19
+----------------------------------------
+SIMD runtime [ms]:               392.05
+32 runtime [ms]:              2400.60
+----------------------------------------
+SIMD performance [Gflops]:         7.30
+32 performance [Gflops]:         1.19
+----------------------------------------
+SIMD bandwidth [GB/s]:            29.19
+SIMD bandwidth [GB/s]:             4.77
+----------------------------------------
+Speed-up Cuda32/Cuda:              6.12
+=================================
+========================================
+Usage: scatterbound <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 1 (60KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.18
+----------------------------------------
+SIMD runtime [ms]:               392.11
+32 runtime [ms]:              2400.78
+----------------------------------------
+SIMD performance [Gflops]:         7.30
+32 performance [Gflops]:         1.19
+----------------------------------------
+SIMD bandwidth [GB/s]:            29.19
+SIMD bandwidth [GB/s]:             4.77
+----------------------------------------
+Speed-up Cuda32/Cuda:              6.12
+=================================

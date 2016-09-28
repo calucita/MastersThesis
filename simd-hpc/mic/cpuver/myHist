@@ -1,0 +1,500 @@
+    7  svn status
+    8  cd ..
+    9  ls
+   10  svn status
+   11  cd simd-hpc/ 
+   12  svn checkout 
+   13  svn checkout https://svn.gpulab.cc.dtu.dk/svn/simd-hpc 
+   14  svn up 
+   15  ls
+   16  touch newfile
+   17  snv add newfile 
+   18  svn add newfile 
+   19  cd ../
+   20  ls
+   21  svn status
+   22  cd simd-hpc/
+   23  svn status
+   24  cd .. 
+   25  ls
+   26  svn checkout https://svn.gpulab.cc.dtu.dk/svn/simd-hpc .
+   27  cd simd-hpc/
+   28  svn up 
+   29  svn status
+   30  ls -lah 
+   31  vim ~/.subversion/config 
+   32  cd 
+   33  vim .subversion/ 
+   34  cd .subversion/ 
+   35  ls
+   36  cd auth/
+   37  ls
+   38  vim svn.username/
+   39  cd svn.username/
+   40  ls
+   41  ls -lah 
+   42  cd 
+   43  cd ThesisBackup/
+   44  ls
+   45  rm -rf *
+   46  ls
+   47  ls 
+   48  svn co --username s140882 https://svn.gpulab.cc.dtu.dk/svn/simd-hpc
+   49  cd simd-hpc/
+   50  ls
+   51  svn status
+   52  svn status cpu/
+   53  svn up
+   54  touch newfile
+   55  svn add newfile 
+   56  svn commit -m "testing"
+   57  cd cpu/
+   58  ls
+   59  cd BrotDat/
+   60  ls
+   61  cp -r ~/Tesis/doubleCrash/cpu/BrotDat/. .
+   62  ls
+   63  snv add *
+   64  svn add *
+   65  svn cleanup 
+   66  svn add *
+   67  svn del * 
+   68  svn del --force * 
+   69  svn add *
+   70  svn cleanup 
+   71  ls
+   72  svn add *
+   73  svn commit "did I fixed it?"
+   74  svn commit -m "did I fixed it?"
+   75  cd ..
+   76  ls
+   77  svn cleanup 
+   78  ls
+   79  svn add BrotDat/*
+   80  svn commit -m "did I fixed it?"
+   81  svn resolve --accept . 
+   82  svn up
+   83  svn resolve --accept . 
+   84  svn resolve --accept BrotDat/
+   85  svn resolve --accept working BrotDat/
+   86  cd BrotDat/
+   87  ls
+   88  svn commit 
+   89  cd ..
+   90  ls
+   91  svn del case1
+   92  svn del case2
+   93  svn del case3
+   94  ls 
+   95  svn commit -m "?"
+   96  ls
+   97  svn update
+   98  svn resolve case1
+   99  svn resolve --accept case1
+  100  svn resolve --accept working case1
+  101  svn del case1 
+  102  ls
+  103  svn commit
+  104  svn update
+  105  svn resolve --accept 
+  106  svn help 
+  107  svn resolve --accept del case1
+  108  svn resolved case1
+  109  svn commit -m "... still fighting "
+  110  mkdir case1
+  111  svn commit -m "... still fighting "
+  112  svn resolve --accept=working case1
+  113  svn commit -m "... still fighting "
+  114  svn resolve --accept=working case1
+  115  svn cleanup
+  116  svn update
+  117  svn commit -m "... still fighting "
+  118  svn commit case1 -m "... still fighting " 
+  119  svn commit BrotDat/ -m "... still fighting " 
+  120  cd BrotDat/
+  121  ls
+  122  cd case1/
+  123  ls
+  124  ls -lah
+  125  svn resolve --accept=working case1
+  126  svn cleanup
+  127  svn update
+  128  svn commit BrotDat/ -m "... still fighting " 
+  129  cd ..
+  130  ls
+  131  cd ..
+  132  ls
+  133  svn add BrotDat/
+  134  svn commit BrotDat/ -m "... still fighting " 
+  135  svn move case1/ BrotDat/case1
+  136  svn add case1/
+  137  svn del case1
+  138  svn del --force case1
+  139  svn commit -m "... still fighting " 
+  140  svn move BrotDat/case1 BrotDat/case1/ 
+  141  cd BrotDat/
+  142  svn cleanup 
+  143  svn status
+  144  svn add *
+  145  cd ..
+  146  ls
+  147  svn status
+  148  svn up 
+  149  svn co
+  150  svn co -m ".."
+  151  svn checkout 
+  152  svn help checkout 
+  153  svn help 
+  154  svn co *
+  155  svn co https://svn.gpulab.cc.dtu.dk/svn/simd-hpc
+  156  svn ci 
+  157  ls 
+  158  rm -rf BrotDat/.
+  159  rm -r BrotDat/.
+  160  cd BrotDat/
+  161  rm -rf *
+  162  ls
+  163  cd 
+  164  svn cleanup 
+  165  #svn co --username s140882 https://svn.gpulab.cc.dtu.dk/svn/simd-hpc
+  166  cd ../
+  167  ls
+  168  cd
+  169  cd ThesisBackup/
+  170  ls
+  171  rm -rf simd-hpc/
+  172  ls -lah 
+  173  rm -rf .svn/
+  174  ls
+  175  ls -lah 
+  176  svn co --username s140882 https://svn.gpulab.cc.dtu.dk/svn/simd-hpc
+  177  cd 
+  178  ls 
+  179  cd ThesisBackup/simd-hpc/cpu/
+  180  ls
+  181  ls BrotDat/
+  182  cp -r ~/Tesis/doubleCrash/cpu/BrotDat/. .
+  183  ls -lah 
+  184  mv case* BrotDat/
+  185  cd BrotDat/
+  186  ls
+  187  ls -lah 
+  188  rm -rf .svn/
+  189  rm -rf case*/.svn/
+  190  rm -rf case*/*/.svn/
+  191  rm -rf case*/*/*/.svn/
+  192  rm -rf case*/*/*/*/.svn/
+  193  cd ..
+  194  svn status BrotDat/
+  195  cd ../
+  196  ls
+  197  cd ../
+  198  ls
+  199  svn co --username s140882 https://svn.gpulab.cc.dtu.dk/svn/simd-hpc
+  200  cd simd-hpc/cpu/
+  201  ls
+  202  cd BrotDat/
+  203  ls
+  204  cd ..
+  205  ls 
+  206  svn status BrotDat/
+  207  cd
+  208  cd ThesisBackup/
+  209  ls 
+  210  rm -rf simd-hpc/
+  211  ls
+  212  svn co --username s140882 https://svn.gpulab.cc.dtu.dk/svn/simd-hpc
+  213  cd simd-hpc/cpu/BrotDat/
+  214  ls
+  215  ls -lah 
+  216  cp -r ~/Tesis/doubleCrash/cpu/BrotDat/case* .
+  217  rm -rf case*/.svn
+  218  rm -rf case*/*/.svn
+  219  rm -rf case*/*/*/.svn
+  220  svn status
+  221  svn add *
+  222  svn commit -m "still trying"
+  223  cd
+  224  cat sshlogs 
+  225  ssh n-62-24-17 -X
+  226  cd ThesisBackup/simd-hpc/cpu/
+  227  ls
+  228  source modules 
+  229  vim nbody.cpp 
+  230  make && OMP_NUM_THREADS=40 nbody
+  231  vim nbody.cpp 
+  232  make && OMP_NUM_THREADS=40 nbody
+  233  cp ~/Tesis/simd-hpc/cpu/bodiesRun .
+  234  vim bodiesRun 
+  235  ./bodiesRun 
+  236  cd ThesisBackup/simd-hpc/cpu/
+  237  ssh n-62-24-17 -X
+  238  cd ThesisBackup/simd-hpc/cpu/
+  239  make && OMP_NUM_THREADS=40 nbody
+  240  source modules 
+  241  make && OMP_NUM_THREADS=40 nbody
+  242  vim bodiesRun 
+  243  vim nbody.cpp 
+  244  make && OMP_NUM_THREADS=40 nbody
+  245  vim nbody.cpp 
+  246  make 
+  247  ./bodiesRun 
+  248  top 
+  249  cd ThesisBackup/simd-hpc/
+  250  cd cpu/
+  251  ls
+  252  cp -r ~/Tesis/simd-hpc/cpu/bodies .
+  253  ls
+  254  svn add bodies/
+  255  cd ../mic/
+  256  ls
+  257  module load intel/2016.1.0.423501
+  258  ls
+  259  make
+  260  ls
+  261  cp ~/Tesis/simd-hpc/mic/nbody* . 
+  262  ls
+  263  vim Makefile 
+  264  svn add * 
+  265  ls 
+  266  make clean 
+  267  ls
+  268  svn del *_calu
+  269  svn add *
+  270  svn commit -m "mic nbody"
+  271  svn del scatterbound_calu
+  272  svn del computebound_calu
+  273  svn del gatherbound_calu
+  274  svn del memorybound_calu
+  275  svn commit -m "mic nbody"
+  276  svn del nbody
+  277  svn commit -m "mic nbody"
+  278  svn del *.s
+  279  svn del --force *.s
+  280  svn commit -m "mic nbody"
+  281  svn del mandelbrot.s
+  282  svn commit -m "mic nbody"
+  283  make
+  284  svn del *.s
+  285  svn del --force *.s
+  286  svn del --force *_calu
+  287  make clean 
+  288  svn commit -m "mic nbody"
+  289  svn del nbody.s
+  290  svn commit -m "mic nbody"
+  291  vim ../timeit.h 
+  292  cd ..
+  293  svn commit -m "timeit with new timemic function"
+  294  cd mic/ 
+  295  make
+  296  OMP_NUM_THREADS=120 nbody
+  297  vim nbody.cpp 
+  298  make && OMP_NUM_THREADS=120 nbody
+  299  vim nbody
+  300  vim nbody.cpp 
+  301  make && OMP_NUM_THREADS=120 nbody
+  302  vim nbody.cpp 
+  303  make && OMP_NUM_THREADS=120 nbody
+  304  vim nbody.cpp 
+  305  make && OMP_NUM_THREADS=120 nbody
+  306  vim nbody.cpp 
+  307  make && OMP_NUM_THREADS=120 nbody
+  308  vim nbody.cpp 
+  309  make && OMP_NUM_THREADS=120 nbody
+  310  vim nbody.cpp 
+  311  make && OMP_NUM_THREADS=120 nbody
+  312  vim nbody.cpp 
+  313  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  314  vim nbody.cpp 
+  315  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  316  vim nbody.cpp 
+  317  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  318  vim nbody.cpp 
+  319  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  320  vim nbody.cpp 
+  321  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  322  vim nbody.cpp 
+  323  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  324  vim nbody.cpp 
+  325  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  326  make 
+  327  vim nbody.cpp 
+  328  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  329  make
+  330  vim nbody.cpp 
+  331  make
+  332  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  333  vim nbody.cpp 
+  334  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  335  vim gatherbound_calu.cpp 
+  336  make &>/dev/null && OMP_NUM_THREADS=120 gatherbound_calu
+  337  vim gatherbound_calu.cpp 
+  338  make &>/dev/null && OMP_NUM_THREADS=120 gatherbound_calu
+  339  vim gatherbound_calu.cpp 
+  340  vim nbody.cpp 
+  341  vim gatherbound_calu.cpp 
+  342  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  343  vim gatherbound_calu.cpp 
+  344  vim nbody.cpp 
+  345  vim gatherbound_calu.cpp 
+  346  vim nbody.cpp 
+  347  vim gatherbound_calu.cpp 
+  348  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  349  vim gatherbound_calu.cpp 
+  350  vim nbody.cpp 
+  351  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  352  vim nbody.cpp 
+  353  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  354  vim nbody.cpp 
+  355  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  356  vim nbody.cpp 
+  357  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  358  vim nbody.cpp 
+  359  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  360  vim nbody.cpp 
+  361  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  362  vim nbody.cpp 
+  363  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  364  vim nbody.cpp 
+  365  ls
+  366  ls ~/Tesis/simd-hpc/mic/
+  367  ls ~/Tesis/simd-hpc/cpu/
+  368  vim ~/Tesis/simd-hpc/nbody/nbody.cpp 
+  369  ls
+  370  svn commit -m "nbody tests "
+  371  svn del computebound
+  372  svn del *bound
+  373  svn commit -m "cleanup "
+  374  ls
+  375  vim nbody.cpp 
+  376  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  377  cp ../cpu/nbody.cpp cpunbod.cpp
+  378  ls
+  379  icc -openmp -mkl -mmic -o try2 cpunbod.cpp 
+  380  cp ../*.h . 
+  381  ls
+  382  icc -openmp -mkl -mmic -o try2 cpunbod.cpp 
+  383  vim timeit.h 
+  384  icc -openmp -mkl -mmic -o try2 cpunbod.cpp 
+  385  ssh mic0 
+  386  ssh mic1
+  387  ./try2 
+  388  rm *.h
+  389  rm cpunbod.cpp 
+  390  rm try2 
+  391  ls
+  392  vim nbody.cpp 
+  393  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  394  make
+  395  svn up 
+  396  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  397  vim nbody.cpp 
+  398  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  399  vim nbody.cpp 
+  400  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  401  vim nbody.cpp 
+  402  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  403  vim nbody.cpp 
+  404  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  405  vim nbody.cpp 
+  406  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  407  vim nbody.cpp 
+  408  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  409  vim nbody.cpp 
+  410  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  411  vim nbody.cpp 
+  412  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  413  vim nbody.cpp 
+  414  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  415  vim nbody.cpp 
+  416  make &>/dev/null && OMP_NUM_THREADS=120 nbody
+  417  exit
+  418  cat sshlogs 
+  419  ssh n-62-18-19 -X
+  420  exit
+  421  lscpu
+  422  nvidia-smi 
+  423  exit
+  424  cat sshlogs 
+  425  ssh n-62-24-17 -X
+  426  exit
+  427  cd ThesisBackup/simd-hpc/mic/
+  428  module load intel/2016.1.0.423501
+  429  make
+  430  OMP_NUM_THREADS=60 nbody
+  431  OMP_NUM_THREADS=32 nbody
+  432  OMP_NUM_THREADS=120 nbody
+  433  vim nbody
+  434  vim nbody.cpp 
+  435  make && OMP_NUM_THREADS=120 nbody
+  436  lscpu 
+  437  ssh mic0
+  438  make && OMP_NUM_THREADS=120 nbody
+  439  vim computebound_calu.cpp 
+  440  vim memorybound_calu.cpp 
+  441  make && OMP_NUM_THREADS=120 memorybound_calu
+  442  make && OMP_NUM_THREADS=120 gatherbound_calu
+  443  make && OMP_NUM_THREADS=120 computebound_calu
+  444  make && OMP_NUM_THREADS=120 gatherbound_calu
+  445  make && OMP_NUM_THREADS=120 scatterbound_calu
+  446  vim gatherbound_calu.cpp 
+  447  vim scatterbound_calu.cpp 
+  448  make && OMP_NUM_THREADS=120 scatterbound_calu
+  449  vim nbody.cpp 
+  450  :q
+  451  exit
+  452  ssh n-62-18-19 -X
+  453  exit
+  454  cd ThesisBackup/simd-hpc/mic/nbody
+  455  ls
+  456  cd ThesisBackup/simd-hpc/
+  457  ls
+  458  cd mic/
+  459  ls
+  460  cd cpuver
+  461  ls
+  462  OMP_NUM_THREADS=240 cpuver
+  463  module load intel
+  464  exit
+  465  cd ThesisBackup/simd-hpc/cpu/
+  466  ls
+  467  source modules 
+  468  OMP_NUM_THREADS=40 nbody
+  469  vim nbody.cpp 
+  470  OMP_NUM_THREADS=40 nbody
+  471  make && OMP_NUM_THREADS=40 nbody
+  472  cd ../gpu/
+  473  ls
+  474  cp ../mic/nbody.cpp 
+  475  cp ../mic/nbody.cpp .
+  476  ls
+  477  cp nbody.cpp nbody.cu
+  478  vim mandelbrot.cu 
+  479  make
+  480  module load cuda
+  481  make
+  482  vim Makefile 
+  483  module load intel/2016.1.0.423501.
+  484  module load intel/2016.1.0.423501
+  485  exit
+  486  cd ThesisBackup/simd-hpc/mic/cpuver
+  487  ls
+  488  OMP_NUM_THREADS=240 cpuver
+  489  exit
+  490  cd ThesisBackup/simd-hpc/mic/cpuver
+  491  OMP_NUM_THREADS=240 cpuver
+  492  exit
+  493  source .ssh/environment 
+  494  echo $MIC_LD_LIBRARY_PATH 
+  495  cd ThesisBackup/simd-hpc/mic/cpuver
+  496  ls
+  497  ./cpuver 
+  498  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH 
+  499  ./cpuver 
+  500  exit 
+  501  cd ThesisBackup/simd-hpc/mic/cpuver/
+  502  source .ssh/environment 
+  503  source ~/.ssh/environment 
+  504  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH 
+  505  OMP_NUM_THREADS=240 cpuver
+  506  history > myHist 

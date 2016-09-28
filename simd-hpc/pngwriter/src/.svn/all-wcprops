@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/simd-hpc/!svn/ver/84/pngwriter/src
+END
+make.include
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/simd-hpc/!svn/ver/46/pngwriter/src/make.include
+END
+Makefile.gnu
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/simd-hpc/!svn/ver/46/pngwriter/src/Makefile.gnu
+END
+pngwriter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/simd-hpc/!svn/ver/46/pngwriter/src/pngwriter.cc
+END
+libpngwriter.a
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/simd-hpc/!svn/ver/84/pngwriter/src/libpngwriter.a
+END
+make.include.gnu
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/simd-hpc/!svn/ver/46/pngwriter/src/make.include.gnu
+END
+pngwriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/simd-hpc/!svn/ver/46/pngwriter/src/pngwriter.h
+END
+Makefile.icc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/simd-hpc/!svn/ver/46/pngwriter/src/Makefile.icc
+END
+make.include.icc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/simd-hpc/!svn/ver/46/pngwriter/src/make.include.icc
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/simd-hpc/!svn/ver/46/pngwriter/src/Makefile
+END
+pngwriter.o
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/simd-hpc/!svn/ver/63/pngwriter/src/pngwriter.o
+END

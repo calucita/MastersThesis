@@ -1,0 +1,52 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 20 (3KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.01
+----------------------------------------
+Scalar runtime [ms]:              43.08
+Easy runtime [ms]:                 4.67
+SIMD runtime [ms]:                 6.22
+Intrinsic runtime [ms]:            4.40
+----------------------------------------
+Scalar performance [Gflops]:     132.82
+SIMD performance [Gflops]:      1224.99
+Intrinsic performance [Gflops]: 1301.94
+----------------------------------------
+Scalar bandwidth [GB/s]:         265.64
+SIMD bandwidth [GB/s]:          2449.98
+Intrinsic bandwidth [GB/s]:     2603.88
+----------------------------------------
+Speed-up SIMD:                     9.22
+Speed-up intrinsic:                9.80
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 20 (3KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 6.84
+----------------------------------------
+Scalar runtime [ms]:              44.15
+Easy runtime [ms]:                 4.67
+SIMD runtime [ms]:                 6.23
+Intrinsic runtime [ms]:            4.40
+----------------------------------------
+Scalar performance [Gflops]:     129.62
+SIMD performance [Gflops]:      1225.49
+Intrinsic performance [Gflops]: 1299.05
+----------------------------------------
+Scalar bandwidth [GB/s]:         259.24
+SIMD bandwidth [GB/s]:          2450.98
+Intrinsic bandwidth [GB/s]:     2598.11
+----------------------------------------
+Speed-up SIMD:                     9.45
+Speed-up intrinsic:               10.02
+========================================

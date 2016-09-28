@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/simd-hpc/!svn/ver/112/mic
+END
+fractal0.png
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/simd-hpc/!svn/ver/68/mic/fractal0.png
+END
+fractal1.png
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/simd-hpc/!svn/ver/68/mic/fractal1.png
+END
+memorybound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/simd-hpc/!svn/ver/72/mic/memorybound.cpp
+END
+fractal2.png
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/simd-hpc/!svn/ver/68/mic/fractal2.png
+END
+scatterbound_calu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/simd-hpc/!svn/ver/90/mic/scatterbound_calu.cpp
+END
+gatherbound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/simd-hpc/!svn/ver/68/mic/gatherbound.cpp
+END
+computebound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/simd-hpc/!svn/ver/72/mic/computebound.cpp
+END
+memorybound_calu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/simd-hpc/!svn/ver/74/mic/memorybound_calu.cpp
+END
+mandelbrot
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/simd-hpc/!svn/ver/97/mic/mandelbrot
+END
+gatherbound_calu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/simd-hpc/!svn/ver/74/mic/gatherbound_calu.cpp
+END
+computebound_calu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/simd-hpc/!svn/ver/80/mic/computebound_calu.cpp
+END
+nbody.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/simd-hpc/!svn/ver/97/mic/nbody.cpp
+END
+fractal.tif
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/simd-hpc/!svn/ver/62/mic/fractal.tif
+END
+helper_mic.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/simd-hpc/!svn/ver/8/mic/helper_mic.h
+END
+t
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/simd-hpc/!svn/ver/62/mic/t
+END
+mandelbrot.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/simd-hpc/!svn/ver/62/mic/mandelbrot.cpp
+END
+histoscript
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/simd-hpc/!svn/ver/80/mic/histoscript
+END
+literal-2.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/simd-hpc/!svn/ver/93/mic/literal-2.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/simd-hpc/!svn/ver/97/mic/Makefile
+END
+literal.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/simd-hpc/!svn/ver/93/mic/literal.c
+END
+scatterbound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/simd-hpc/!svn/ver/74/mic/scatterbound.cpp
+END

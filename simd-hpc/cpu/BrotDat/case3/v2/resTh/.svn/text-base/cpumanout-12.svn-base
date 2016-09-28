@@ -1,0 +1,50 @@
+========================================
+Usage: mandelbrot <N:default=1024> <M:default=1024> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1024
+M = 1024
+threads = 12 (341.333KB per thread)
+Mem size = 4096 KB
+----------------------------------------
+Init runtime:             0.001102 s
+----------------------------------------
+                  v2                   
+----------------------------------------
+Scalar kernel runtime:    3.064459 s
+norm=0.000000000000000
+Saving fractal0.png.
+SIMD kernel runtime:      0.852337 s
+norm=0.000000000000000
+Saving fractal1.png.
+Intrinsic kernel runtime: 0.414658 s
+norm=0.000000000000000
+Saving fractal2.png.
+----------------------------------------
+Speed-up SIMD:            3.60
+Speed-up intrinsic:       7.39
+========================================
+========================================
+Usage: mandelbrot <N:default=1024> <M:default=1024> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1024
+M = 1024
+threads = 12 (341.333KB per thread)
+Mem size = 4096 KB
+----------------------------------------
+Init runtime:             0.002683 s
+----------------------------------------
+                  v2                   
+----------------------------------------
+Scalar kernel runtime:    3.066378 s
+norm=0.000000000000000
+Saving fractal0.png.
+SIMD kernel runtime:      0.852353 s
+norm=0.000000000000000
+Saving fractal1.png.
+Intrinsic kernel runtime: 0.414667 s
+norm=0.000000000000000
+Saving fractal2.png.
+----------------------------------------
+Speed-up SIMD:            3.60
+Speed-up intrinsic:       7.39
+========================================

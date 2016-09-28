@@ -1,0 +1,43 @@
+TARGETS = mandelbrot_gcc #computebound memorybound gatherbound scatterbound
+OBJS    =  #../writepng.o  #fusedmultiplyadd.o ../tiff.o
+OPT	  = -g -O3 #-std=c++11 #-q -Wa
+PIC	  =
+#XOPTS   = -msse #-no-vec
+#XOPTS   = -mavx #-no-vec
+XOPTS   =  -march=core-avx2 -mavx2 -mfma -ggdb # This one works only on Haswell -fma 
+DEBUG   =# -qopt-report-file=stdout -opt-report-routine=simd  #-qopt-report=5 -qopt-report-phase=vec 
+OMP     = -fopenmp -fopenmp-simd -Wunknown-pragmas
+
+#PNGWRITERPATH = pngwriter
+ARCH	      = $(shell uname -p)
+#PNGWRTLPATH   = $(PNGWRITERPATH)/lib/$(ARCH)
+#PNGWRTIPATH   = $(PNGWRITERPATH)/include
+#PNGWRITERLIB  = $(PNGWRTLPATH)/libpngwriter.a
+
+INCLUDE = -I.. #-I../$(PNGWRTIPATH)
+SOFLAGS =
+XLIBS	  = #-L../$(PNGWRTLPATH) -lpngwriter -lpng #-L.. -ltiff 
+
+CXX	  = g++
+CXXFLAGS= $(OPT) ${INCLUDE} $(PIC) $(OMP) $(XOPTS)
+
+all:  $(PNGWRITERLIB) ${OBJS} ${TARGETS} #simdmand
+
+$(PNGWRITERLIB):
+	@cd ../pngwriter/src && $(MAKE) -f Makefile.icc
+
+${TARGETS}: % : %.cpp
+#	$(CXX) -S $(CXXFLAGS) $(SOFLAGS) $(INCLUDES) $^ $(DEBUG)
+	$(CXX) -o $@ $(CXXFLAGS) $(SOFLAGS) $(INCLUDES) $^ ${OBJS} $(XLIBS)
+
+simdmand: 
+	$(CXX) -S $(CXXFLAGS) $(SOFLAGS) $(INCLUDES) simdman.cpp  $(DEBUG)
+clean:
+	@/bin/rm -f $(TARGETS) $(addsuffix .o,$(TARGETS)) $(addsuffix .s,$(TARGETS)) $(OBJS)
+
+mandel:
+	@rm -f fractal.tif out.tif mandelbrot
+	@make
+	@mandelbrot
+	@montage -geometry 512x512 fractal.tif out.tif
+	@display out.tif

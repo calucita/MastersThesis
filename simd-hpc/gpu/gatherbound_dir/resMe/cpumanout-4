@@ -1,0 +1,36 @@
+========================================
+Usage: gatherbound <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 1 (60KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.19
+----------------------------------------
+Cuda [ms]:                        31.08
+Cuda (32 elements) [ms]:         587.95
+----------------------------------------
+SIMD performance [Gflops]:        92.07
+----------------------------------------
+SIMD bandwidth [GB/s]:           368.27
+Speed-up Cuda32/Cuda:             18.92
+========================================
+========================================
+Usage: gatherbound <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 1 (60KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.19
+----------------------------------------
+Cuda [ms]:                        31.08
+Cuda (32 elements) [ms]:         587.87
+----------------------------------------
+SIMD performance [Gflops]:        92.07
+----------------------------------------
+SIMD bandwidth [GB/s]:           368.27
+Speed-up Cuda32/Cuda:             18.92
+========================================

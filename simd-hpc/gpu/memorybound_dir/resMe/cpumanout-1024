@@ -1,0 +1,54 @@
+=======================================
+========================================
+Usage: memorybound <Bytes:default=15360> <M:default=10000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 3932160
+M = 10000
+Threads = 1 (15360KB per thread)
+Mem size = 15360 KB
+----------------------------------------
+---------------------------------------
+Init runtime [ms]:                11.41
+----------------------------------------
+Scalar runtime [ms]:            8100.78
+Cuda [ms]:                         1.57
+Cuda (32 elements) [ms]:        7343.62
+----------------------------------------
+Scalar performance [Gflops]:       9.04
+Cuda [Gflops]:                  46743.76
+Cuda (32E) [Gflops]:               9.97
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+Cuda bandwidth [GB/s]:             9.35
+Cuda32 bandwidth [GB/s]:           0.00
+----------------------------------------
+Speed-up Cpu/Cuda:              5169.99
+Speed-up Cuda32/Cuda:           4686.76
+========================================
+=======================================
+========================================
+Usage: memorybound <Bytes:default=15360> <M:default=10000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 3932160
+M = 10000
+Threads = 1 (15360KB per thread)
+Mem size = 15360 KB
+----------------------------------------
+---------------------------------------
+Init runtime [ms]:                11.89
+----------------------------------------
+Scalar runtime [ms]:            7867.65
+Cuda [ms]:                         1.57
+Cuda (32 elements) [ms]:        7345.36
+----------------------------------------
+Scalar performance [Gflops]:       9.31
+Cuda [Gflops]:                  46772.23
+Cuda (32E) [Gflops]:               9.97
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+Cuda bandwidth [GB/s]:             9.35
+Cuda32 bandwidth [GB/s]:           0.00
+----------------------------------------
+Speed-up Cpu/Cuda:              5024.26
+Speed-up Cuda32/Cuda:           4690.72
+========================================

@@ -1,0 +1,18 @@
+========================================
+Usage: computebound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1920
+M = 200000
+Threads = 40 (0.1875KB per thread)
+Mem size = 7.5 KB
+----------------------------------------
+error : N/2 is not a multiple of threads times 32
+========================================
+Usage: computebound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1920
+M = 200000
+Threads = 40 (0.1875KB per thread)
+Mem size = 7.5 KB
+----------------------------------------
+error : N/2 is not a multiple of threads times 32

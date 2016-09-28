@@ -1,0 +1,25 @@
+TARGET	= brot
+LIBSRCS	= mandelbrot.cu 
+LIBOBJS	= mandelbrot.o
+
+OPT	= -g -arch=sm_20 #-fopenmp
+PIC	= -Xcompiler -fopenmp -Xcompiler -fPIC
+XOPTS = -Xptxas -v #-maxrregcount 32
+#DEBUG   = -qopt-report=5 -opt-report-routine=simd -qopt-report-phase=vec #-qopt-report-file=stdout
+
+CXX	= nvcc #-maxregcount 32
+
+CXXFLAGS = $(OPT) $(PIC) $(XOPTS) $(DEBUG)
+
+CUDA_PATH ?= /appl/cuda/6.5
+INCLUDES = -I$(CUDA_PATH)/include -I$(CUDA_PATH)/samples/common/inc
+
+SOFLAGS = -shared
+XLIBS	= #-lcublas
+$(TARGETS): % : %.cu
+	$(CXX) -o $@ $(CXXFLAGS) $(SOFLAGS) $(INCLUDES) $^ $(LIBSRCS) $(XLIBS)
+
+
+
+clean:
+	@/bin/rm -f core core.* $(LIBOBJS) 

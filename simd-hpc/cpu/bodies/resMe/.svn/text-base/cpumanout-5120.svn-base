@@ -1,0 +1,18 @@
+========================================
+Usage: nbody <Bytes:default=122880> <M:default=25> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1280
+M = 25
+Threads = 40 (0.125KB per thread)
+Mem size = 5 KB
+----------------------------------------
+error : N/2 is not a multiple of threads times 32
+========================================
+Usage: nbody <Bytes:default=122880> <M:default=25> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1280
+M = 25
+Threads = 40 (0.125KB per thread)
+Mem size = 5 KB
+----------------------------------------
+error : N/2 is not a multiple of threads times 32

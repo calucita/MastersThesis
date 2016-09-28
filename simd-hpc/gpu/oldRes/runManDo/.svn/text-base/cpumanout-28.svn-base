@@ -1,0 +1,60 @@
+=======================================
+========================================
+Usage: mandelbrot <N:default=1024> <M:default=1024> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1024
+M = 1024
+threads = 28 (146.286KB per thread)
+Mem size = 4096 KB
+----------------------------------------
+---------------------------------------
+Init runtime:                0.001592 s
+Wake-up runtime (cpu+gpu):   0.032310 s
+---------------------------------------
+Scalar CPU kernel runtime:   0.030898 s
+Cuda 32 threads multi:             0.568663 s
+Cuda 32 threads single:      15.690270 s
+Saving fractal.tif.
+Cuda Scalar (blocks):        0.037610 s
+Cuda Scalar(32 elements/th): 0.041844 s
+Cuda Simd (32 elements/th):  0.002196 s
+Cuda Simd - 1 elem/th:       0.001519 s
+---------------------------------------
+Speed-up cpu/CudaSimd:          20.34 
+Speed-up 1th/32thSimd:          27.59 
+Speed-up 1th/CudaSimd:        10329.58 
+Speed-up Cuda Sc/Sc32:           0.90 
+Speed-up Cuda Simd32/Simd:       1.45 
+Speed-up Cuda Sc/Simd:          24.76 
+Speed-up Cuda Sc32/Simd32:      19.05 
+=======================================
+=======================================
+========================================
+Usage: mandelbrot <N:default=1024> <M:default=1024> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1024
+M = 1024
+threads = 28 (146.286KB per thread)
+Mem size = 4096 KB
+----------------------------------------
+---------------------------------------
+Init runtime:                0.001549 s
+Wake-up runtime (cpu+gpu):   0.032357 s
+---------------------------------------
+Scalar CPU kernel runtime:   0.030884 s
+Cuda 32 threads multi:             0.568711 s
+Cuda 32 threads single:      15.690087 s
+Saving fractal.tif.
+Cuda Scalar (blocks):        0.037611 s
+Cuda Scalar(32 elements/th): 0.041843 s
+Cuda Simd (32 elements/th):  0.002194 s
+Cuda Simd - 1 elem/th:       0.001517 s
+---------------------------------------
+Speed-up cpu/CudaSimd:          20.36 
+Speed-up 1th/32thSimd:          27.59 
+Speed-up 1th/CudaSimd:        10344.07 
+Speed-up Cuda Sc/Sc32:           0.90 
+Speed-up Cuda Simd32/Simd:       1.45 
+Speed-up Cuda Sc/Simd:          24.80 
+Speed-up Cuda Sc32/Simd32:      19.07 
+=======================================

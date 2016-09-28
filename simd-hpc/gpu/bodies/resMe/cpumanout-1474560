@@ -1,0 +1,50 @@
+========================================
+Usage: nbody <Bytes:default=737280> <M:default=25> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 368640 (particles = 61440) 
+M = 25
+Threads = 1 (1440KB per thread)
+Mem size = 1440 KB
+----------------------------------------
+--malloc--------------------------------------
+----------------------------------------
+
+ Average rate for iterations 11 through 25: 9.244 +- 0.101 steps per second.
+
+ Average rate for iterations 11 through 25: 9.259 +- 0.098 steps per second.
+GPU runtime [ms]:               2701.91
+
+ Average rate for iterations 11 through 25: 0.169 +- -nan steps per second.
+
+ Average rate for iterations 11 through 25: 0.169 +- -nan steps per second.
+GPU runtime [ms]:               147833.79
+----------------------------------------
+----------------------------------------
+Speed-up Cuda32/Cuda:             54.71
+----------------------------------------
+========================================
+========================================
+Usage: nbody <Bytes:default=737280> <M:default=25> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 368640 (particles = 61440) 
+M = 25
+Threads = 1 (1440KB per thread)
+Mem size = 1440 KB
+----------------------------------------
+--malloc--------------------------------------
+----------------------------------------
+
+ Average rate for iterations 11 through 25: 9.264 +- 0.104 steps per second.
+
+ Average rate for iterations 11 through 25: 9.257 +- 0.107 steps per second.
+GPU runtime [ms]:               2698.65
+
+ Average rate for iterations 11 through 25: 0.169 +- -nan steps per second.
+
+ Average rate for iterations 11 through 25: 0.169 +- 0.000 steps per second.
+GPU runtime [ms]:               147672.67
+----------------------------------------
+----------------------------------------
+Speed-up Cuda32/Cuda:             54.72
+----------------------------------------
+========================================

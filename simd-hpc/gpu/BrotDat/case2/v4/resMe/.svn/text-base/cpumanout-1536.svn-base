@@ -1,0 +1,44 @@
+=======================================
+========================================
+Usage: mandelbrot <N:default=1024> <M:default=1024> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1536
+M = 1536
+threads = 40 (230.4KB per thread)
+Mem size = 9216 KB
+----------------------------------------
+---------------------------------------
+Init runtime:                0.002753 s
+Wake-up runtime (cpu+gpu):   0.499201 s
+---------------------------------------
+Cuda Scalar (blocks):        0.452243 s
+norm=7.747321
+Saving fractal0.png.
+Cuda Simd - 1 elem/th:       0.017445 s
+norm=7.747321
+Saving fractal1.png.
+---------------------------------------
+Speed-up Cuda Sc/Simd:          25.92 
+=======================================
+=======================================
+========================================
+Usage: mandelbrot <N:default=1024> <M:default=1024> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 1536
+M = 1536
+threads = 40 (230.4KB per thread)
+Mem size = 9216 KB
+----------------------------------------
+---------------------------------------
+Init runtime:                0.002728 s
+Wake-up runtime (cpu+gpu):   0.498526 s
+---------------------------------------
+Cuda Scalar (blocks):        0.452395 s
+norm=7.747321
+Saving fractal0.png.
+Cuda Simd - 1 elem/th:       0.017530 s
+norm=7.747321
+Saving fractal1.png.
+---------------------------------------
+Speed-up Cuda Sc/Simd:          25.81 
+=======================================

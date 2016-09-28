@@ -1,0 +1,81 @@
+#!/bin/bash
+
+#file=v5/resTh
+#rm -f $file/*
+#
+#echo $file
+#for i in 1 4 8 12 16 20 24 28 32 40 
+#do 
+#	OMP_NUM_THREADS=${i} mandelbrot > $file/cpumanout-$i 
+#	OMP_NUM_THREADS=${i} mandelbrot >>$file/cpumanout-$i
+#	echo $i >> $file/timeRes
+#	echo $i >> $file/timeRes
+#	echo "$i Thread RUN"
+#done
+#
+#for i in 1 4 8 12 16 20 24 28 32 40
+#do 
+#	cat $file/cpumanout-$i | grep "Scalar kernel runtime" | awk '{print $4}' >> $file/scalar
+#	cat $file/cpumanout-$i | grep "Scalar complex kernel" | awk '{print $4}' >> $file/complex
+#	cat $file/cpumanout-$i | grep "SIMD complex kernel" | awk '{print $4}' >>   $file/Scomplex
+#	cat $file/cpumanout-$i | grep "SIMD kernel" | awk '{print $4}' >>           $file/Skernel
+#	cat $file/cpumanout-$i | grep "Intrinsic kernel" | awk '{print $4}' >>      $file/intrin
+#	cat $file/cpumanout-$i | grep "Complex/complex" | awk '{print $3}' >>       $file/CCspeed
+#	cat $file/cpumanout-$i | grep "Speed-up SIMD" | awk '{print $3}' >>         $file/Sspeed
+#	cat $file/cpumanout-$i | grep "Speed-up intrinsic" | awk '{print $3}' >>    $file/Ispeed
+#done
+#
+#cd $file
+#paste timeRes scalar complex Skernel Scomplex intrin > timeResultsCPU
+#paste timeRes CCspeed Sspeed Ispeed > speedupsCPU
+#
+#cd ../..
+module load intel/2016.1.0.423501
+cases=(1 2 3)
+prevc=(3 1 2)
+version=(3 4 5)
+prevver=(3 4)
+dummy=0
+for c in 0 1 3 
+do
+cat mandelbrot.cpp | sed "s/\#define CASE${prevc[$c]}/\#define CASE${cases[$c]}/i" > mandelmod
+
+for v in 0 1 2 
+do
+cat mandelmod      | sed "s/\#define VERSION [0-9]/\#define VERSION ${version[$v]}/i" > mandelbrot.cpp
+cat mandelbrot.cpp | grep "define VERSION"
+echo "s/\#define VERSION ${version[$v]}/i"
+read dummy
+make
+ 
+file="case${cases[$c]}/v${version[$v]}/resMe"
+rm -f $file/*
+###########  MEMORYFOOTPRINT
+for i in 8 16 32 64 128 256 512  1024 1536 2048 2560 3072 4096 
+do 
+	OMP_NUM_THREADS=40 mandelbrot $i $i > $file/cpumanout-$i 
+	OMP_NUM_THREADS=40 mandelbrot $i $i >>$file/cpumanout-$i
+	echo "just finished size $i for case ${cases[$c]} and version ${version[$v]}"
+done
+
+for i in 8 16 32 64 128 256 512 1024 1536 2048 2560 3072 4096 
+do 
+	cat $file/cpumanout-$i | grep "Scalar kernel runtime" | awk '{print $4}' >> $file/scalar
+	cat $file/cpumanout-$i | grep "Scalar complex kernel" | awk '{print $4}' >> $file/complex
+	cat $file/cpumanout-$i | grep "SIMD complex kernel" | awk '{print $4}' >>   $file/Scomplex
+	cat $file/cpumanout-$i | grep "SIMD kernel" | awk '{print $4}' >>           $file/Skernel
+	cat $file/cpumanout-$i | grep "Intrinsic kernel" | awk '{print $4}' >>      $file/intrin
+	cat $file/cpumanout-$i | grep "Complex/complex" | awk '{print $3}' >>       $file/CCspeed
+	cat $file/cpumanout-$i | grep "Speed-up SIMD" | awk '{print $3}' >>         $file/Sspeed
+	cat $file/cpumanout-$i | grep "Speed-up intrinsic" | awk '{print $3}' >>    $file/Ispeed
+	echo $(( $i * 4 )) >> $file/memRes
+	echo $(( $i * 4 )) >> $file/memRes
+done
+
+cd $file
+paste memRes scalar complex Skernel Scomplex intrin > ResultsCPU
+paste memRes CCspeed Sspeed Ispeed > speedupsCPU
+
+cd ../../../
+done 
+done

@@ -1,0 +1,21 @@
+
+# bound plot
+fileCpu="../cpu/bodies/resMe/speedupsCPU"
+fileMic="../mic/bodies/resMe/speedupsCPU"
+fileGpu="../gpu/bodies/resMe/speedupsCPU"
+set title "N-body problem GPU"
+set logscale x 2
+#set logscale y 10
+set xlabel "Memory footprint (KB)"
+set ylabel "Speed-up"
+set autoscale
+set term png   
+set terminal pngcairo enhanced font 'Verdana,14' linewidth 2 
+set output "SpeeMeGPU.png"
+set key left bottom 
+set yrange [0:]
+file=fileGpu
+plot file using 1:2 notitle w points linetype 1, file using 1:($2/2) title 'GPU' smooth frequency linetype 1
+#     file using 1:3 notitle w points linetype 2, file using 1:($3/2) title 'SIMD' smooth frequency linetype 2 
+#     fileGpu using 1:3 title 'CPU SIMD' w linespoints
+

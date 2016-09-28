@@ -1,0 +1,36 @@
+========================================
+Usage: nbody <Bytes:default=122880> <M:default=25> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 40960
+M = 25
+Threads = 40 (4KB per thread)
+Mem size = 160 KB
+----------------------------------------
+Scalar runtime [ms]:            9393.81
+Easy runtime [ms]:              2585.00
+Simd runtime [ms]:              2586.31
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+SIMD bandwidth [GB/s]:             0.00
+----------------------------------------
+Speed-up SIMD:                     3.63
+----------------------------------------
+========================================
+========================================
+Usage: nbody <Bytes:default=122880> <M:default=25> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 40960
+M = 25
+Threads = 40 (4KB per thread)
+Mem size = 160 KB
+----------------------------------------
+Scalar runtime [ms]:            9388.44
+Easy runtime [ms]:              2584.85
+Simd runtime [ms]:              2582.55
+----------------------------------------
+Scalar bandwidth [GB/s]:           0.00
+SIMD bandwidth [GB/s]:             0.00
+----------------------------------------
+Speed-up SIMD:                     3.64
+----------------------------------------
+========================================

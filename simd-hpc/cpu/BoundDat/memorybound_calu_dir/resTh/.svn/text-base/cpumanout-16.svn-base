@@ -1,0 +1,52 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 16 (3.75KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Scalar runtime [ms]:              34.67
+Easy runtime [ms]:                 5.73
+SIMD runtime [ms]:                 7.73
+Intrinsic runtime [ms]:            5.49
+----------------------------------------
+Scalar performance [Gflops]:     165.05
+SIMD performance [Gflops]:       998.13
+Intrinsic performance [Gflops]: 1043.02
+----------------------------------------
+Scalar bandwidth [GB/s]:         330.11
+SIMD bandwidth [GB/s]:          1996.26
+Intrinsic bandwidth [GB/s]:     2086.05
+----------------------------------------
+Speed-up SIMD:                     6.05
+Speed-up intrinsic:                6.32
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 16 (3.75KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.03
+----------------------------------------
+Scalar runtime [ms]:              34.68
+Easy runtime [ms]:                 5.73
+SIMD runtime [ms]:                 7.73
+Intrinsic runtime [ms]:            5.49
+----------------------------------------
+Scalar performance [Gflops]:     165.01
+SIMD performance [Gflops]:       998.09
+Intrinsic performance [Gflops]: 1042.84
+----------------------------------------
+Scalar bandwidth [GB/s]:         330.02
+SIMD bandwidth [GB/s]:          1996.17
+Intrinsic bandwidth [GB/s]:     2085.69
+----------------------------------------
+Speed-up SIMD:                     6.05
+Speed-up intrinsic:                6.32
+========================================

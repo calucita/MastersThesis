@@ -1,0 +1,12 @@
+Propagating particles using 228 threads...  
+ Step 1: 0.242 seconds 
+ Step 2: 0.017 seconds 
+ Step 3: 0.016 seconds 
+ Step 4: 0.017 seconds 
+ Step 5: 0.017 seconds 
+ Step 6: 0.016 seconds 
+ Step 7: 0.017 seconds 
+ Step 8: 0.017 seconds 
+ Step 9: 0.016 seconds 
+ Step 10: 0.017 seconds 
+ Average rate for iterations 2 through 10: 60.191 +- 0.653 steps per second.

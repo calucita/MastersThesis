@@ -1,0 +1,36 @@
+========================================
+Usage: tempy <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 983040
+M = 200000
+Threads = 240 (16KB per thread)
+Mem size = 3840 KB
+----------------------------------------
+Init runtime:          1210.44 
+Wake-up runtime:       4744.69 
+---------------------------------
+Scalar runtime [ms]: 12711.98 
+SIMD runtime [ms]:   7438.43 
+Easy runtime [ms]:   8598.38 
+---------------------------------
+Speed-up SIMD:         1.71
+Speed-up Easy:         1.48
+=================================
+========================================
+Usage: tempy <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 983040
+M = 200000
+Threads = 240 (16KB per thread)
+Mem size = 3840 KB
+----------------------------------------
+Init runtime:          1222.63 
+Wake-up runtime:       4761.02 
+---------------------------------
+Scalar runtime [ms]: 10012.50 
+SIMD runtime [ms]:   4946.68 
+Easy runtime [ms]:   5155.93 
+---------------------------------
+Speed-up SIMD:         2.02
+Speed-up Easy:         1.94
+=================================

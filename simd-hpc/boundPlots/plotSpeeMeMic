@@ -1,0 +1,24 @@
+
+# bound plot
+fileCpu="../cpu/computebound_calu_dir/resMe/speedupsCPU"
+fileMic="scatsped" #"../mic/scatterbound_calu_dir/resMe/speedupsGPU"
+fileGpu="../gpu/computebound_dir/resMe/speedupsGPU"
+filetem="../mic/tempy_dir/resMe/speedupsGPU"
+set title "Scatterbound tests-MIC"
+set logscale x 2
+#set logscale y 10
+set xlabel "Memory footprint (KB)"
+set ylabel "Speed-up"
+set autoscale
+set term png   
+set terminal pngcairo enhanced font 'Verdana,14' linewidth 2 
+set output "Sca2SpeeMeMIC.png"
+set key right top 
+
+plot fileMic using 1:2 notitle w points linetype 1, \
+     fileMic using 1:($2/2) smooth frequency title 'MIC Easy' w l linetype 1,\
+     fileMic using 1:3 notitle w points linetype 2, \
+     fileMic using 1:($3/2) smooth frequency title 'MIC SIMD' w l linetype 2,\
+     fileMic using 1:4 notitle w points linetype 3, \
+     fileMic using 1:($4/2) smooth frequency title 'MIC native' w l linetype 3
+

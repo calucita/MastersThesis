@@ -1,0 +1,500 @@
+    5  make
+    6  make clean make
+    7  make clean
+    8  make
+    9  OFFLOAD_REPORT=2 OMP_NUM_THREADS=240 nbody
+   10  vim Makefile 
+   11  make
+   12  vim nbody.cpp 
+   13  make
+   14  vim nbody.cpp 
+   15  make
+   16  vim nbody.cpp 
+   17  make
+   18  make clean 
+   19  make | grep sqrt
+   20  touch nbody.cpp 
+   21  make
+   22  vim nbody.cpp 
+   23  vtune 
+   24  vim nbody.cpp 
+   25  make
+   26  OFFLOAD_REPORT=2 OMP_NUM_THREADS=240 nbody
+   27  vim nbody.cpp 
+   28  make
+   29  vim nbody.cpp 
+   30  make
+   31  OFFLOAD_REPORT=2 OMP_NUM_THREADS=240 nbody
+   32  ssh mi0
+   33  ssh mic0
+   34  ls
+   35  cd cpuver
+   36  module swap intel/2016.2.0
+   37  history  | grep mkl
+   38  icc -openmp -mkl -mmic -o cpuver cpuvernbody.cpp 
+   39  icc -qopenmp -mkl -mmic -o cpuver cpuvernbody.cpp 
+   40  ssh mic0
+   41  find /opt/intel/2016update2/ -name libmkl_intel_*
+   42  icc -openmp -mkl -L /opt/intel/2016update2/compilers_and_libraries_2016.2.181/linux/mkl/lib/intel64_lin_mic -mmic -o cpuver cpuvernbody.cpp 
+   43  icc -qopenmp -mkl -mmic -o cpuver cpuvernbody.cpp 
+   44  module load studio
+   45  dwarfdump cpuver 
+   46  dumpstabs cpuver
+   47  dumpstabs cpuver | grep -i rpath
+   48  echo $MIC_LD_LIBRARY_PATH 
+   49  echo MIC_LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH 
+   50  echo MIC_LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH > ~/.ssh/environment
+   51  ssh mic0
+   52  vim cpuvernbody.cpp 
+   53  icc -qopenmp -mkl -mmic -o cpuver cpuvernbody.cpp 
+   54  ssh mic0
+   55  module load intel/2016.2.0
+   56  ssh mic0
+   57  exit
+   58  cat sshlogs 
+   59  ssh n-62-18-19 -X
+   60  exit
+   61  cd ThesisBackup/simd-hpc/gpu/
+   62  module load cuda
+   63  module load intel/2016.1.0.423501
+   64  make
+   65  make clean 
+   66  make
+   67  ./nbody 
+   68  OMP_NUM_THREADS=40 nbody
+   69  vim nbody.cu
+   70  make
+   71  OMP_NUM_THREADS=40 nbody
+   72  ./nbody 
+   73  vim nbody.cu
+   74  make 
+   75  OMP_NUM_THREADS=40 nbody
+   76  vim nbody.cu
+   77  make && OMP_NUM_THREADS=40 nbody
+   78  vim nbody.cu
+   79  make && OMP_NUM_THREADS=40 nbody
+   80  vim nbody.cu
+   81  make && OMP_NUM_THREADS=40 nbody
+   82  vim nbody.cu
+   83  vim Makefile 
+   84  vim ../cpu/Makefile
+   85  vim Makefile 
+   86  vim nbody.cu
+   87  make
+   88  exit
+   89  cat sshlogs 
+   90  ssh n-62-24-17 -X
+   91  exit
+   92  cd ThesisBackup/simd-hpc/cpu/
+   93  source modules 
+   94  OMP_NUM_THREADS=40 nbody
+   95  vim nbody.cpp 
+   96  make
+   97  vim Makefile 
+   98  vim nbody.cpp 
+   99  make
+  100  OMP_NUM_THREADS=40 nbody
+  101  vim nbody.cpp 
+  102  make && OMP_NUM_THREADS=40 nbody
+  103  ssh mic0 
+  104  #/opt/intel/2016update2/compilers_and_libraries_2016.2.181/linux/mkl/lib/intel64_lin_mic
+  105  exit
+  106  cat sshlogs 
+  107  ./nbody: error while loading shared libraries: libmkl_intel_lp64.so: cannot open shared object file: No such file or directory
+  108  ssh n-62-24-17 -X
+  109  exit
+  110  cd ThesisBackup/simd-hpc/gpu/
+  111  ls
+  112  OMP_NUM_THREADS=20 nbody
+  113  module load intel/2016.1.0.423501
+  114  module load cuda
+  115  OMP_NUM_THREADS=20 nbody
+  116  vim nbody.cu
+  117  make
+  118  vim nbody.cu
+  119  make
+  120  vim nbody.cu
+  121  make
+  122  OMP_NUM_THREADS=20 nbody
+  123  vim nbody.cu
+  124  make
+  125  vim nbody.cu
+  126  OMP_NUM_THREADS=20 nbody
+  127  vim nbody.cu
+  128  make && OMP_NUM_THREADS=20 nbody
+  129  vim nbody.cu
+  130  make && OMP_NUM_THREADS=20 nbody
+  131  vim nbody.cu
+  132  make && OMP_NUM_THREADS=20 nbody
+  133  vim nbody.cu
+  134  make && OMP_NUM_THREADS=20 nbody
+  135  vim nbody.cu
+  136  make && OMP_NUM_THREADS=20 nbody
+  137  vim nbody.cu
+  138  make && OMP_NUM_THREADS=20 nbody
+  139  vim nbody.cu
+  140  make && OMP_NUM_THREADS=20 nbody
+  141  vim nbody.cu
+  142  make && OMP_NUM_THREADS=20 nbody
+  143  vim nbody.cu
+  144  make && OMP_NUM_THREADS=20 nbody
+  145  vim nbody.cu
+  146  make && OMP_NUM_THREADS=20 nbody
+  147  make && OMP_NUM_THREADS=40 nbody
+  148  make && OMP_NUM_THREADS=40 ../cpu/nbody
+  149  OMP_NUM_THREADS=40 ../cpu/nbody
+  150  cd ../cpu/
+  151  ls
+  152  vim nbody.cpp 
+  153  make
+  154  cd ../gpu/
+  155  OMP_NUM_THREADS=40 ../cpu/nbody
+  156  vim ../cpu/nbody.cpp 
+  157  ../cpu/make && OMP_NUM_THREADS=40 ../cpu/nbody
+  158  cd ../cpu/
+  159  make
+  160  cd ../gpu/
+  161  OMP_NUM_THREADS=40 ../cpu/nbody
+  162  OMP_NUM_THREADS=40 ./nbody
+  163  vim Makefile 
+  164  make && OMP_NUM_THREADS=40 ./nbody
+  165  make clean
+  166  make
+  167  make && OMP_NUM_THREADS=40 ./nbody
+  168  OMP_NUM_THREADS=40 ../cpu/nbody
+  169  vim nbody.cu
+  170  make && OMP_NUM_THREADS=40 ./nbody
+  171  vim nbody.cu
+  172  make && OMP_NUM_THREADS=40 ./nbody
+  173  nvvp -X
+  174  vim nbody.cu
+  175  make && OMP_NUM_THREADS=40 ./nbody
+  176  nvvp -X &
+  177  vim nbody.cu
+  178  make && OMP_NUM_THREADS=40 ./nbody
+  179  vim nbody.cu
+  180  make && OMP_NUM_THREADS=40 ./nbody
+  181  vim nbody.cu
+  182  make && OMP_NUM_THREADS=40 ./nbody
+  183  nvvp -X &
+  184  vim nbody.cu
+  185  echo $(( 30720 * 4 * 6 )) 
+  186  echo $(( 30720 * 4 * 6 / 1024 )) 
+  187  lscpu 
+  188  vim nbody.cu
+  189  make
+  190  make && OMP_NUM_THREADS=40 ./nbody
+  191  vim nbody.cu
+  192  make && OMP_NUM_THREADS=40 ./nbody
+  193  vim nbody.cu
+  194  make && OMP_NUM_THREADS=40 ./nbody
+  195  vim nbody.cu
+  196  make && OMP_NUM_THREADS=40 ./nbody
+  197  vim nbody.cu
+  198  make && OMP_NUM_THREADS=40 ./nbody
+  199  vim nbody.cu
+  200  make && OMP_NUM_THREADS=40 ./nbody
+  201  vim ../cpu/computebound_calu.cpp 
+  202  vim nbody.cu
+  203  vim ../cpu/computebound_calu.cpp 
+  204  make && OMP_NUM_THREADS=40 ./nbody
+  205  vim nbody.cu
+  206  make && OMP_NUM_THREADS=40 ./nbody
+  207  vim nbody.cu
+  208  make && OMP_NUM_THREADS=40 ./nbody
+  209  vim nbody.cu
+  210  svn commit -m "updated gpu code for nbody"
+  211  svn add nbody.cu 
+  212  svn commit -m "updated gpu code for nbody"
+  213  ../cpu/computebound_calu 
+  214  vim nbody.cu
+  215  make && OMP_NUM_THREADS=40 ./nbody
+  216  vim nbody.cu
+  217  make && OMP_NUM_THREADS=40 ./nbody
+  218  vim nbody.cu
+  219  make && OMP_NUM_THREADS=40 ./nbody
+  220  vim nbody.cu
+  221  make && OMP_NUM_THREADS=40 ./nbody
+  222  vim nbody.cu
+  223  make && OMP_NUM_THREADS=40 ./nbody
+  224  vim nbody.cu
+  225  make && OMP_NUM_THREADS=40 ./nbody
+  226  vim nbody.cu
+  227  make && OMP_NUM_THREADS=40 ./nbody
+  228  vim nbody.cu
+  229  :wq
+  230  vim nbody.cu
+  231  make && OMP_NUM_THREADS=40 ./nbody
+  232  vim nbody.cu
+  233  make && OMP_NUM_THREADS=40 ./nbody
+  234  vim nbody.cu
+  235  make && OMP_NUM_THREADS=40 ./nbody
+  236  vim nbody.cu
+  237  make && OMP_NUM_THREADS=40 ./nbody
+  238  make && OMP_NUM_THREADS=40 ./nbody && ../cpu/nbody 
+  239  make && OMP_NUM_THREADS=40 ./nbody &&  OMP_NUM_THREADS=40 ../cpu/nbody 
+  240  vim nbody.cu
+  241  make && OMP_NUM_THREADS=40 ./nbody &&  OMP_NUM_THREADS=40 ../cpu/nbody 
+  242  vim nbody.cu
+  243  make && OMP_NUM_THREADS=40 ./nbody &&  OMP_NUM_THREADS=40 ../cpu/nbody 
+  244  cd ../cpu/
+  245  vim nbody.cpp 
+  246  vim ../gpu/nbody.cpp 
+  247  vim ../gpu/nbody.cu
+  248  make
+  249  vim ../gpu/nbody.cu
+  250  vim nbody.cpp 
+  251  make
+  252  vim nbody.cpp 
+  253  vim Makefile
+  254  vim nbody.cpp 
+  255  make
+  256  vim nbody.cpp 
+  257  make
+  258  vim nbody.cpp 
+  259  make
+  260  vim nbody.cpp 
+  261  make
+  262  vim nbody.cpp 
+  263  make
+  264  vim nbody.cpp 
+  265  make
+  266  make && OMP_NUM_THREADS=40 ./nbody
+  267  vim nbody.cpp 
+  268  make && OMP_NUM_THREADS=40 ./nbody
+  269  vim nbody.cpp 
+  270  make && OMP_NUM_THREADS=40 ./nbody
+  271  vim nbody.cpp 
+  272  make && OMP_NUM_THREADS=40 ./nbody
+  273  vim nbody.cpp 
+  274  make && OMP_NUM_THREADS=40 ./nbody
+  275  vim nbody.cpp 
+  276  make && OMP_NUM_THREADS=40 ./nbody
+  277  vim nbody.cpp 
+  278  make && OMP_NUM_THREADS=40 ./nbody
+  279  vim nbody.cpp 
+  280  make
+  281  make && OMP_NUM_THREADS=40 ./nbody
+  282  vim nbody.cpp 
+  283  make && OMP_NUM_THREADS=40 ./nbody
+  284  vim nbody.cpp 
+  285  make && OMP_NUM_THREADS=40 ./nbody
+  286  vim nbody.cpp 
+  287  make && OMP_NUM_THREADS=40 ./nbody
+  288  vim nbody.cpp 
+  289  make && OMP_NUM_THREADS=40 ./nbody
+  290  vim nbody.cpp 
+  291  make && OMP_NUM_THREADS=40 ./nbody
+  292  vim nbody.cpp 
+  293  make && OMP_NUM_THREADS=40 ./nbody && ../gpu/nbody 
+  294  make && OMP_NUM_THREADS=40 ../gpu/nbody 
+  295  vim nbody.cpp 
+  296  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  297  vim nbody.cpp 
+  298  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  299  vim nbody.cpp 
+  300  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  301  vim nbody.cpp 
+  302  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  303  vim nbody.cpp 
+  304  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  305  vim nbody.cpp 
+  306  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  307  vim nbody.cpp 
+  308  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  309  cd ..
+  310  svn commit -m "new versions of the nbody 1loop + err + rsqrt "
+  311  vim gpu/nbody.cu
+  312  cd gpu/
+  313  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  314  vim gpu/nbody.cu
+  315  vim nbody.cu
+  316  vim gpu/nbody.cu
+  317  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  318  vim gpu/nbody.cu
+  319  vim nbody.cu
+  320  make && OMP_NUM_THREADS=40 ./nbody &&  time
+  321  exit
+  322  ssh n-62-24-17 -X
+  323  exit
+  324  cd ThesisBackup/simd-hpc/
+  325  cd gpu 
+  326  module load intel/2016.1.0.423501
+  327  module load cuda
+  328  OMP_NUM_THREADS=40 nbody
+  329  vim nbody.cu 
+  330  make && OMP_NUM_THREADS=40 nbody
+  331  vim nbody.cu 
+  332  make && OMP_NUM_THREADS=40 nbody
+  333  make && OMP_NUM_THREADS=40 ../cpu/nbody
+  334  vim nbody.cu 
+  335  make && OMP_NUM_THREADS=40 nbody
+  336  vim nbody.cu 
+  337  make && OMP_NUM_THREADS=40 nbody
+  338  vim nbody.cu 
+  339  make && OMP_NUM_THREADS=40 nbody
+  340  vim nbody.cu 
+  341  make && OMP_NUM_THREADS=40 nbody
+  342  vim nbody.cu 
+  343  make && OMP_NUM_THREADS=40 nbody
+  344  vim nbody.cu 
+  345  make && OMP_NUM_THREADS=40 nbody
+  346  vim nbody.cu 
+  347  make && OMP_NUM_THREADS=40 nbody
+  348  vim nbody.cu 
+  349  make && OMP_NUM_THREADS=40 nbody
+  350  make && OMP_NUM_THREADS=40 ../cpu/nbody
+  351  cd ../cpu/
+  352  ls
+  353  vim nbody.cpp 
+  354  make && OMP_NUM_THREADS=40 nbody
+  355  vim nbody.cpp 
+  356  make && OMP_NUM_THREADS=40 nbody
+  357  vim nbody.cpp 
+  358  make && OMP_NUM_THREADS=40 nbody
+  359  vim nbody.cpp 
+  360  make && OMP_NUM_THREADS=40 nbody
+  361  cd ..
+  362  svn commit -m "nbody problem gpu and cpu modifications of sqrtf and rsqrtf "
+  363  exit
+  364  ssh n-62-24-17 -X
+  365  exit
+  366  cd ThesisBackup/simd-hpc/mic/
+  367  OMP_NUM_THREADS=240 origN 
+  368  exit
+  369  cd ThesisBackup/simd-hpc/mic/
+  370  OMP_NUM_THREADS=240 origN 
+  371  history > michelp
+  372  cat michelp | grep export
+  373  cat michelp | grep 85
+  374  source ~/.ssh/environment 
+  375  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  376  OMP_NUM_THREADS=240 origN 
+  377  exit
+  378  cd ThesisBackup/simd-hpc/mic/
+  379  source ~/.ssh/environment 
+  380  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  381  OMP_NUM_THREADS=240 origN 
+  382  time OMP_NUM_THREADS=240 origN 
+  383  exit
+  384  cd ThesisBackup/simd-hpc/mic/
+  385  source ~/.ssh/environment 
+  386  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  387  time OMP_NUM_THREADS=240 origN 
+  388  time OMP_NUM_THREADS=120 origN 
+  389  time OMP_NUM_THREADS=240 origN 
+  390  exit
+  391  cd ThesisBackup/simd-hpc/mic/
+  392  source ~/.ssh/environment 
+  393  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  394  time OMP_NUM_THREADS=240 origN 
+  395  exit
+  396  cd ThesisBackup/simd-hpc/mic/
+  397  source ~/.ssh/environment 
+  398  time OMP_NUM_THREADS=240 origN 
+  399  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  400  time OMP_NUM_THREADS=240 origN 
+  401  time OMP_NUM_THREADS=228 origN 
+  402  ldd origN
+  403  exit
+  404  cd ThesisBackup/simd-hpc/mic/
+  405  source ~/.ssh/environment 
+  406  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  407  time OMP_NUM_THREADS=228 origN 
+  408  exit
+  409  cd ThesisBackup/simd-hpc/mic/
+  410  ls
+  411  vim cpuvernbody.cpp 
+  412  cp cpuvernbody.cpp orignbod.cpp
+  413  vim orignbod.cpp 
+  414  module load intel/2016.1.0.423501
+  415  icc -openmp -mkl -mmic -o origN orignbod.cpp 
+  416  vim orignbod.cpp 
+  417  icc -openmp -mkl -mmic -o origN orignbod.cpp 
+  418  vim orignbod.cpp 
+  419  icc -openmp -mkl -mmic -o origN orignbod.cpp 
+  420  vim orignbod.cpp 
+  421  icc -openmp -mkl -mmic -o origN orignbod.cpp 
+  422  ssh mic0
+  423  vim orignbod.cpp 
+  424  module swap intel/2016.2.0
+  425  icc -openmp -mkl -mmic -o origN orignbod.cpp 
+  426  icc -qopenmp -mkl -mmic -o origN orignbod.cpp 
+  427  ssh mic0
+  428  vim orignbod.cpp 
+  429  icc -qopenmp -mkl -mmic -o origN orignbod.cpp 
+  430  ssh mic0
+  431  vim orignbod.cpp 
+  432  mv orignbod.cpp orignbod.c
+  433  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  434  vim orignbod.cpp orig
+  435  vim orignbod.c
+  436  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  437  vim orignbod.c
+  438  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  439  vim orignbod.c
+  440  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  441  icc -qopenmp -mkl -mmic -o origN orignbod.c 
+  442  vim orignbod.c
+  443  icc -qopenmp -mkl -mmic -o origN orignbod.c 
+  444  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  445  vim orignbod.c
+  446  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  447  vim orignbod.c
+  448  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  449  vim orignbod.c
+  450  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  451  vim orignbod.c
+  452  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  453  vim orignbod.c
+  454  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  455  :q
+  456  vim orignbod.c
+  457  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  458  vim orignbod.c
+  459  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  460  vim orignbod.c
+  461  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  462  vim orignbod.c
+  463  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  464  vim orignbod.c
+  465  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  466  vim orignbod.c
+  467  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  468  ssh mic0 
+  469  vim orignbod.c
+  470  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  471  ssh mic0 
+  472  icc -std=c99 -openmp -mkl -mmic -o origN orignbod.c 
+  473  ssh mic0 
+  474  vim orignbod.c
+  475  icc -std=c99 -openmp -mkl -mmic -o origN orignbod.c 
+  476  vim orignbod.c
+  477  icc -std=c99 -openmp -mkl -mmic -o origN orignbod.c 
+  478  icc -std=c99 -qopenmp -mkl -mmic -o origN orignbod.c 
+  479  icc -std=c99 -qopenmp -mkl -mmic -fimf-domain-exclusion=8 -o origN orignbod.c 
+  480  ssh mic0 
+  481  icc -std=c99 -qopenmp -mkl -mmic -fimf-domain-exclusion=8 -S origN orignbod.c 
+  482  icc -std=c99 -qopenmp -mkl -mmic -fimf-domain-exclusion=8 -S origN.s orignbod.c 
+  483  icc -std=c99 -qopenmp -mkl -mmic -fimf-domain-exclusion=8 -S orignbod.c 
+  484  vim orignbod.s
+  485  exit
+  486  cd ThesisBackup/simd-hpc/mic/
+  487  source ~/.ssh/environment 
+  488  time OMP_NUM_THREADS=228 origN 
+  489  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  490  time OMP_NUM_THREADS=228 origN 
+  491  exit
+  492  cd ThesisBackup/simd-hpc/mic/
+  493  source ~/.ssh/environment 
+  494  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  495  time OMP_NUM_THREADS=228 origN 
+  496  time OMP_NUM_THREADS=228 origN 
+  497  time OMP_NUM_THREADS=240 origN 
+  498  time OMP_NUM_THREADS=120 origN 
+  499  exit
+  500  cd ThesisBackup/simd-hpc/mic/
+  501  source ~/.ssh/environment 
+  502  export LD_LIBRARY_PATH=$MIC_LD_LIBRARY_PATH
+  503  time OMP_NUM_THREADS=228 origN 
+  504  history > michelp 

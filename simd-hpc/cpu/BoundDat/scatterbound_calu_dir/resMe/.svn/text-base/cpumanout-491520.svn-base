@@ -1,0 +1,34 @@
+========================================
+Usage: scatterbound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 122880
+M = 200000
+Threads = 40 (12KB per thread)
+Mem size = 480 KB
+----------------------------------------
+Init runtime:            15.25 
+Wake-up runtime:        241.83 
+---------------------------------
+SIMD kernel runtime:    241.89 
+Scalar kernel runtime:  255.80 
+Easy kernel runtime:    246.96 
+---------------------------------
+Speed-up:              1.06
+=================================
+========================================
+Usage: scatterbound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 122880
+M = 200000
+Threads = 40 (12KB per thread)
+Mem size = 480 KB
+----------------------------------------
+Init runtime:            14.90 
+Wake-up runtime:        240.22 
+---------------------------------
+SIMD kernel runtime:    235.32 
+Scalar kernel runtime:  244.09 
+Easy kernel runtime:    242.68 
+---------------------------------
+Speed-up:              1.04
+=================================

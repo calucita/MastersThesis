@@ -1,0 +1,58 @@
+========================================
+Usage: memorybound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 61440
+M = 200000
+Threads = 240 (1KB per thread)
+Mem size = 240 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Overhead runtime [ms]:            96.49
+Scalar runtime [ms]:             644.58
+simd sum=30719.500000
+Easy runtime [ms]:                56.58
+simd sum=30719.500000
+SIMD runtime [ms]:                32.61
+simd sum=30719.500000
+----------------------------------------
+Scalar performance [Gflops]:      17.75
+Easy performance [Gflops]:       202.25
+SIMD performance [Gflops]:       350.88
+----------------------------------------
+Scalar bandwidth [GB/s]:          71.02
+Easy bandwidth [GB/s]:           809.01
+SIMD bandwidth [GB/s]:          1403.54
+----------------------------------------
+Speed-up Easy:                    11.39
+Speed-up SIMD:                    19.76
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 61440
+M = 200000
+Threads = 240 (1KB per thread)
+Mem size = 240 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Overhead runtime [ms]:            98.05
+Scalar runtime [ms]:             598.02
+simd sum=30719.500000
+Easy runtime [ms]:                65.01
+simd sum=30719.500000
+SIMD runtime [ms]:                25.51
+simd sum=30719.500000
+----------------------------------------
+Scalar performance [Gflops]:      19.14
+Easy performance [Gflops]:       176.04
+SIMD performance [Gflops]:       448.54
+----------------------------------------
+Scalar bandwidth [GB/s]:          76.55
+Easy bandwidth [GB/s]:           704.14
+SIMD bandwidth [GB/s]:          1794.16
+----------------------------------------
+Speed-up Easy:                     9.20
+Speed-up SIMD:                    23.44
+========================================

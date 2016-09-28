@@ -1,0 +1,18 @@
+file="MeSpeedRes"
+set title "Detailed Mandelbrot image"
+set logscale x 2
+#set logscale y 10
+set xlabel "Memory footprint"
+set ylabel "Speed-up"
+set autoscale
+set term png    
+set output "SpeeMe.png"
+set key left top 
+
+plot file using 1:2 title 'Case1' w linespoints,\
+     file using 1:4 title 'Case2' w linespoints,\
+     file using 1:6 title 'Case3' w linespoints,\
+     file using 1:8 title 'Case4' w linespoints,\
+     file using 1:10 title 'Case5' w linespoints,\
+     file using 1:11 title 'Case5-intrinsic' w linespoints
+

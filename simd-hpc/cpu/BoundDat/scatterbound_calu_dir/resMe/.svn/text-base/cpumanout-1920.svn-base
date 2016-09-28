@@ -1,0 +1,18 @@
+========================================
+Usage: scatterbound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 480
+M = 200000
+Threads = 40 (0.046875KB per thread)
+Mem size = 1.875 KB
+----------------------------------------
+error : N/2 is not a multiple of threads times 32
+========================================
+Usage: scatterbound_calu <Bytes:default=245760> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 480
+M = 200000
+Threads = 40 (0.046875KB per thread)
+Mem size = 1.875 KB
+----------------------------------------
+error : N/2 is not a multiple of threads times 32

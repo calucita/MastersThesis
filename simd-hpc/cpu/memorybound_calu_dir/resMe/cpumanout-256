@@ -1,0 +1,54 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 983040
+M = 200000
+Threads = 24 (160KB per thread)
+Mem size = 3840 KB
+----------------------------------------
+Init runtime [ms]:                 0.73
+----------------------------------------
+Scalar runtime [ms]:            2411.86
+Easy runtime [ms]:               694.46
+SIMD runtime [ms]:               704.32
+Intrinsic runtime [ms]:          694.92
+----------------------------------------
+Scalar performance [Gflops]:     151.84
+SIMD performance [Gflops]:       527.33
+Intrinsic performance [Gflops]:  526.98
+----------------------------------------
+Scalar bandwidth [GB/s]:         303.67
+SIMD bandwidth [GB/s]:          1054.66
+Intrinsic bandwidth [GB/s]:     1053.96
+----------------------------------------
+Speed-up SIMD:                     3.47
+Speed-up Easy:                     3.42
+Speed-up intrinsic:                3.47
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 983040
+M = 200000
+Threads = 24 (160KB per thread)
+Mem size = 3840 KB
+----------------------------------------
+Init runtime [ms]:                 0.81
+----------------------------------------
+Scalar runtime [ms]:            2376.71
+Easy runtime [ms]:               766.09
+SIMD runtime [ms]:               767.75
+Intrinsic runtime [ms]:          708.83
+----------------------------------------
+Scalar performance [Gflops]:     154.08
+SIMD performance [Gflops]:       478.03
+Intrinsic performance [Gflops]:  516.64
+----------------------------------------
+Scalar bandwidth [GB/s]:         308.17
+SIMD bandwidth [GB/s]:           956.05
+Intrinsic bandwidth [GB/s]:     1033.29
+----------------------------------------
+Speed-up SIMD:                     3.10
+Speed-up Easy:                     3.10
+Speed-up intrinsic:                3.35
+========================================

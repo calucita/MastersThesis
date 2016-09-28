@@ -1,0 +1,54 @@
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 20 (3KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Scalar runtime [ms]:              27.99
+Easy runtime [ms]:                 4.70
+SIMD runtime [ms]:                 6.22
+Intrinsic runtime [ms]:            4.70
+----------------------------------------
+Scalar performance [Gflops]:     204.41
+SIMD performance [Gflops]:      1217.47
+Intrinsic performance [Gflops]: 1217.96
+----------------------------------------
+Scalar bandwidth [GB/s]:         408.82
+SIMD bandwidth [GB/s]:          2434.94
+Intrinsic bandwidth [GB/s]:     2435.93
+----------------------------------------
+Speed-up SIMD:                     5.96
+Speed-up Easy:                     4.50
+Speed-up intrinsic:                5.96
+========================================
+========================================
+Usage: memorybound_calu <Bytes:default=61440> <M:default=200000> <threads:default=OMP_NUM_THREADS>
+----------------------------------------
+N = 15360
+M = 200000
+Threads = 20 (3KB per thread)
+Mem size = 60 KB
+----------------------------------------
+Init runtime [ms]:                 0.02
+----------------------------------------
+Scalar runtime [ms]:              45.95
+Easy runtime [ms]:                 4.72
+SIMD runtime [ms]:                 6.23
+Intrinsic runtime [ms]:            4.42
+----------------------------------------
+Scalar performance [Gflops]:     124.54
+SIMD performance [Gflops]:      1212.55
+Intrinsic performance [Gflops]: 1295.48
+----------------------------------------
+Scalar bandwidth [GB/s]:         249.08
+SIMD bandwidth [GB/s]:          2425.10
+Intrinsic bandwidth [GB/s]:     2590.95
+----------------------------------------
+Speed-up SIMD:                     9.74
+Speed-up Easy:                     7.37
+Speed-up intrinsic:               10.40
+========================================
